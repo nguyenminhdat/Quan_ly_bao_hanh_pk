@@ -1,0 +1,117 @@
+D:\project\Treelist\Quan ly bao hanh\Quan_ly_bao_hanh\Bao_Hanh\obj\Debug\Bao_Hanh.frm_DoiMatKhau.resources
+D:\project\Treelist\Quan ly bao hanh\Quan_ly_bao_hanh\Bao_Hanh\obj\Debug\Bao_Hanh.frm_DoiMatKhauNew.resources
+D:\project\Treelist\Quan ly bao hanh\Quan_ly_bao_hanh\Bao_Hanh\obj\Debug\Bao_Hanh.frm_login.resources
+D:\project\Treelist\Quan ly bao hanh\Quan_ly_bao_hanh\Bao_Hanh\obj\Debug\Bao_Hanh.Main.resources
+D:\project\Treelist\Quan ly bao hanh\Quan_ly_bao_hanh\Bao_Hanh\obj\Debug\Bao_Hanh.frm_QuanLyChucDanh.resources
+D:\project\Treelist\Quan ly bao hanh\Quan_ly_bao_hanh\Bao_Hanh\obj\Debug\Bao_Hanh.frm_QuanLyDichVu.resources
+D:\project\Treelist\Quan ly bao hanh\Quan_ly_bao_hanh\Bao_Hanh\obj\Debug\Bao_Hanh.frm_QuanLyKhachHang.resources
+D:\project\Treelist\Quan ly bao hanh\Quan_ly_bao_hanh\Bao_Hanh\obj\Debug\Bao_Hanh.frm_QuanLyNhanVien.resources
+D:\project\Treelist\Quan ly bao hanh\Quan_ly_bao_hanh\Bao_Hanh\obj\Debug\Bao_Hanh.frm_TimKiemKhachHang.resources
+D:\project\Treelist\Quan ly bao hanh\Quan_ly_bao_hanh\Bao_Hanh\obj\Debug\Bao_Hanh.Properties.Resources.resources
+D:\project\Treelist\Quan ly bao hanh\Quan_ly_bao_hanh\Bao_Hanh\obj\Debug\Bao_Hanh.uc_DoiMatKhau.resources
+D:\project\Treelist\Quan ly bao hanh\Quan_ly_bao_hanh\Bao_Hanh\obj\Debug\Bao_Hanh.uc_QuanLyDichVu.resources
+D:\project\Treelist\Quan ly bao hanh\Quan_ly_bao_hanh\Bao_Hanh\obj\Debug\Bao_Hanh.csproj.GenerateResource.Cache
+D:\project\Treelist\Quan ly bao hanh\Quan_ly_bao_hanh\Bao_Hanh\obj\Debug\Bao_Hanh.exe.licenses
+D:\project\Treelist\Quan ly bao hanh\Quan_ly_bao_hanh\Bao_Hanh\bin\Debug\Bao_Hanh.exe.config
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\obj\Debug\Bao_Hanh.csprojAssemblyReference.cache
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\obj\Debug\FRT_Pharma.Form.Dialog.Flyout_Form.resources
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\obj\Debug\Bao_Hanh.frm_DoiMatKhau.resources
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\obj\Debug\Bao_Hanh.frm_DoiMatKhauNew.resources
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\obj\Debug\Bao_Hanh.frm_login.resources
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\obj\Debug\Bao_Hanh.Main.resources
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\obj\Debug\Bao_Hanh.frm_QLyKhachHang.resources
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\obj\Debug\Bao_Hanh.frm_QuanLyChucDanh.resources
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\obj\Debug\Bao_Hanh.frm_QuanLyDichVu.resources
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\obj\Debug\Bao_Hanh.frm_QuanLyNhanVien.resources
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\obj\Debug\Bao_Hanh.frm_TimKiemKhachHang.resources
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\obj\Debug\Bao_Hanh.Properties.Resources.resources
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\obj\Debug\Bao_Hanh.uc_DoiMatKhau.resources
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\obj\Debug\Bao_Hanh.uc_QuanLyDichVu.resources
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\obj\Debug\Bao_Hanh.csproj.GenerateResource.cache
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\obj\Debug\Bao_Hanh.exe.licenses
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\Bao_Hanh.exe.config
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\Bao_Hanh.exe
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\Bao_Hanh.pdb
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\DevExpress.BonusSkins.v19.1.dll
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\DevExpress.Data.v19.1.dll
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\DevExpress.Printing.v19.1.Core.dll
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\DevExpress.Sparkline.v19.1.Core.dll
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\DevExpress.Utils.v19.1.dll
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\DevExpress.XtraBars.v19.1.dll
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\DevExpress.XtraEditors.v19.1.dll
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\DevExpress.XtraGrid.v19.1.dll
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\DevExpress.XtraLayout.v19.1.dll
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\DevExpress.XtraPrinting.v19.1.dll
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\DevExpress.Pdf.v19.1.Core.dll
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\DevExpress.RichEdit.v19.1.Core.dll
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\DevExpress.XtraTreeList.v19.1.dll
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\DevExpress.Office.v19.1.Core.dll
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\DevExpress.Images.v19.1.dll
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\DevExpress.Data.v19.1.xml
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\DevExpress.Printing.v19.1.Core.xml
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\DevExpress.Utils.v19.1.xml
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\DevExpress.XtraBars.v19.1.xml
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\DevExpress.Sparkline.v19.1.Core.xml
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\DevExpress.XtraEditors.v19.1.xml
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\DevExpress.XtraGrid.v19.1.xml
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\DevExpress.XtraLayout.v19.1.xml
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\DevExpress.XtraPrinting.v19.1.xml
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\DevExpress.Pdf.v19.1.Core.xml
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\DevExpress.RichEdit.v19.1.Core.xml
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\DevExpress.XtraTreeList.v19.1.xml
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\DevExpress.Office.v19.1.Core.xml
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\de\DevExpress.Data.v19.1.resources.dll
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\es\DevExpress.Data.v19.1.resources.dll
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\ja\DevExpress.Data.v19.1.resources.dll
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\ru\DevExpress.Data.v19.1.resources.dll
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\de\DevExpress.Printing.v19.1.Core.resources.dll
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\es\DevExpress.Printing.v19.1.Core.resources.dll
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\ja\DevExpress.Printing.v19.1.Core.resources.dll
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\ru\DevExpress.Printing.v19.1.Core.resources.dll
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\de\DevExpress.Utils.v19.1.resources.dll
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\es\DevExpress.Utils.v19.1.resources.dll
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\ja\DevExpress.Utils.v19.1.resources.dll
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\ru\DevExpress.Utils.v19.1.resources.dll
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\de\DevExpress.XtraBars.v19.1.resources.dll
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\es\DevExpress.XtraBars.v19.1.resources.dll
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\ja\DevExpress.XtraBars.v19.1.resources.dll
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\ru\DevExpress.XtraBars.v19.1.resources.dll
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\de\DevExpress.Sparkline.v19.1.Core.resources.dll
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\es\DevExpress.Sparkline.v19.1.Core.resources.dll
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\ja\DevExpress.Sparkline.v19.1.Core.resources.dll
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\ru\DevExpress.Sparkline.v19.1.Core.resources.dll
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\de\DevExpress.XtraEditors.v19.1.resources.dll
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\es\DevExpress.XtraEditors.v19.1.resources.dll
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\ja\DevExpress.XtraEditors.v19.1.resources.dll
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\ru\DevExpress.XtraEditors.v19.1.resources.dll
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\de\DevExpress.XtraGrid.v19.1.resources.dll
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\es\DevExpress.XtraGrid.v19.1.resources.dll
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\ja\DevExpress.XtraGrid.v19.1.resources.dll
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\ru\DevExpress.XtraGrid.v19.1.resources.dll
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\de\DevExpress.XtraLayout.v19.1.resources.dll
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\es\DevExpress.XtraLayout.v19.1.resources.dll
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\ja\DevExpress.XtraLayout.v19.1.resources.dll
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\ru\DevExpress.XtraLayout.v19.1.resources.dll
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\de\DevExpress.XtraPrinting.v19.1.resources.dll
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\es\DevExpress.XtraPrinting.v19.1.resources.dll
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\ja\DevExpress.XtraPrinting.v19.1.resources.dll
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\ru\DevExpress.XtraPrinting.v19.1.resources.dll
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\de\DevExpress.Pdf.v19.1.Core.resources.dll
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\es\DevExpress.Pdf.v19.1.Core.resources.dll
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\ja\DevExpress.Pdf.v19.1.Core.resources.dll
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\ru\DevExpress.Pdf.v19.1.Core.resources.dll
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\de\DevExpress.RichEdit.v19.1.Core.resources.dll
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\es\DevExpress.RichEdit.v19.1.Core.resources.dll
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\ja\DevExpress.RichEdit.v19.1.Core.resources.dll
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\ru\DevExpress.RichEdit.v19.1.Core.resources.dll
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\de\DevExpress.XtraTreeList.v19.1.resources.dll
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\es\DevExpress.XtraTreeList.v19.1.resources.dll
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\ja\DevExpress.XtraTreeList.v19.1.resources.dll
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\ru\DevExpress.XtraTreeList.v19.1.resources.dll
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\de\DevExpress.Office.v19.1.Core.resources.dll
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\es\DevExpress.Office.v19.1.Core.resources.dll
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\ja\DevExpress.Office.v19.1.Core.resources.dll
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\bin\Debug\ru\DevExpress.Office.v19.1.Core.resources.dll
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\obj\Debug\Bao_Hanh.csproj.CopyComplete
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\obj\Debug\Bao_Hanh.exe
+D:\DatNM\TOOL_Bao Hanh\Quan ly bao hanh v1\Bao_Hanh\obj\Debug\Bao_Hanh.pdb
