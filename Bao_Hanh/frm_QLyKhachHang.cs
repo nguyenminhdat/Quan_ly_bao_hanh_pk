@@ -209,6 +209,11 @@ namespace Bao_Hanh
         {
             string strMakh;
             strMakh = gv_Data.GetRowCellValue(gv_Data.FocusedRowHandle, "MaKH").ToString();
+            if (string.IsNullOrEmpty(strMakh))
+            {
+                Util.f_Notify("Chưa chọn thông tin xóa",false);
+                return;
+            }
             f_Delete(strMakh);
         }
         private void txtPhone_Enter(object sender, EventArgs e)
@@ -231,7 +236,10 @@ namespace Bao_Hanh
         }
         private void btn_TimKiem_Click(object sender, EventArgs e)
         {
-            f_TimKiem(txtMaKH.Text, txtHoVaTen.Text, txtPhone.Text);
+            string strMaKH = txtMaKH.Text.Trim();
+            string strTen = txtHoVaTen.Text.Trim();
+            string strPhone = txtPhone.Text.Trim();
+            f_TimKiem(strMaKH, strTen, strPhone);
         }
         private void btn_Clear_Click(object sender, EventArgs e)
         {
@@ -247,6 +255,26 @@ namespace Bao_Hanh
             }
         }
 
-       
+        private void gv_Data_RowClick(object sender, DevExpress.XtraGrid.Views.Grid.RowClickEventArgs e)
+        {
+
+            try
+            {
+                int row = e.RowHandle;
+                if (row >= 0)
+                {
+                    txtMaKH.Text = Convert.ToString(gv_Data.GetRowCellValue(row, cMaKH));
+                    txtHoVaTen.Text = Convert.ToString(gv_Data.GetRowCellValue(row, cTenKH));
+                    txtDiaChi.Text = Convert.ToString(gv_Data.GetRowCellValue(row, cDiaChi));
+                    txtPhone.Text = Convert.ToString(gv_Data.GetRowCellValue(row, cSDT));
+                    cboNgaySinh.Text = Convert.ToString(gv_Data.GetRowCellValue(row, cNgaySinh));
+                    cbo_GioiTinh.Text = Convert.ToString(gv_Data.GetRowCellValue(row, cGioiTinh));
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
     }
 }

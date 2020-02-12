@@ -103,7 +103,6 @@ namespace Bao_Hanh
 
         private void btn_quanlyKH_Click(object sender, EventArgs e)
         {
-
             frm_QLyKhachHang frm = new frm_QLyKhachHang();
             MoForm(frm);
         }
@@ -120,6 +119,8 @@ namespace Bao_Hanh
             {
                 uc_QuanLyDichVu.Instance.BringToFront();
             }
+            frm_TimKiemKhachHang frm = new frm_TimKiemKhachHang();
+            MoForm(frm);
 
         }
 
@@ -165,6 +166,12 @@ namespace Bao_Hanh
         private void bar_QuanLyNhanVien_Click(object sender, EventArgs e)
         {
             frm_QuanLyNhanVien frm = new frm_QuanLyNhanVien();
+            MoForm(frm);
+        }
+
+        private void btn_taoDonBH_Click(object sender, EventArgs e)
+        {
+            frm_TaoDonBaoHanh frm = new frm_TaoDonBaoHanh();
             MoForm(frm);
         }
     }

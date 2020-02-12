@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.txt_GhiChu = new DevExpress.XtraEditors.MemoEdit();
             this.btn_TimKiem = new DevExpress.XtraEditors.SimpleButton();
             this.btn_Luu = new DevExpress.XtraEditors.SimpleButton();
             this.btn_Xoa = new DevExpress.XtraEditors.SimpleButton();
@@ -45,9 +46,9 @@
             this.cTenChucDanh = new DevExpress.XtraGrid.Columns.GridColumn();
             this.cGhiChu = new DevExpress.XtraGrid.Columns.GridColumn();
             this.rep_TinhTrang = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
-            this.txt_GhiChu = new DevExpress.XtraEditors.MemoEdit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_GhiChu.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTenChucDanh.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMaChucDanh.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
@@ -55,7 +56,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.gc_Data)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gv_Data)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rep_TinhTrang)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_GhiChu.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // panelControl1
@@ -76,6 +76,13 @@
             this.panelControl1.Name = "panelControl1";
             this.panelControl1.Size = new System.Drawing.Size(812, 192);
             this.panelControl1.TabIndex = 0;
+            // 
+            // txt_GhiChu
+            // 
+            this.txt_GhiChu.Location = new System.Drawing.Point(188, 84);
+            this.txt_GhiChu.Name = "txt_GhiChu";
+            this.txt_GhiChu.Size = new System.Drawing.Size(213, 81);
+            this.txt_GhiChu.TabIndex = 48;
             // 
             // btn_TimKiem
             // 
@@ -268,13 +275,6 @@
             this.rep_TinhTrang.AutoHeight = false;
             this.rep_TinhTrang.Name = "rep_TinhTrang";
             // 
-            // txt_GhiChu
-            // 
-            this.txt_GhiChu.Location = new System.Drawing.Point(188, 84);
-            this.txt_GhiChu.Name = "txt_GhiChu";
-            this.txt_GhiChu.Size = new System.Drawing.Size(213, 81);
-            this.txt_GhiChu.TabIndex = 48;
-            // 
             // frm_QuanLyChucDanh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -290,6 +290,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             this.panelControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_GhiChu.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTenChucDanh.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMaChucDanh.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
@@ -297,7 +298,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.gc_Data)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gv_Data)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rep_TinhTrang)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_GhiChu.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
