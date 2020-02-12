@@ -28,23 +28,30 @@ namespace Bao_Hanh
             cbo_GioiTinh.Properties.Items.Add("Khác");
         }
 
-        void f_validate_save()
+        bool f_validate_save()
         {
+            if (txtHoVaTen.Text.Equals("") || txtPhone.Text.Equals(""))
+            {
+                Util.f_Notify("Thông tin khách hàng không được để trống ", false);
+                return false;
+            }
+
             if (!txtPhone.Text.Trim().Equals(""))
             {
                 if (txtPhone.Text.Trim().Length < 10 || txtPhone.Text.Trim().Length > 11)
                 {
                     Util.f_Notify("Số ĐT phải nhập 10 hoặc 11 số", false);
                     txtPhone.Focus();
-                    return;
+                    return false;
                 }
                 if (!Regex.IsMatch(txtPhone.Text.Trim(), "^[0-9]*$"))
                 {
                     Util.f_Notify("Số ĐT sai", false);
                     txtPhone.Focus();
-                    return;
+                    return false;
                 }
             }
+            return true;
         }
 
 
@@ -64,7 +71,7 @@ namespace Bao_Hanh
             }
         }
         //Save Thông tin khách hàng
-        private void f_save(string strMaKh, string strHoten, string strGioiTinh, string strSDT, string strDiaChi, DateTime strNgaySinh)
+        private void f_save(string strMaKh, string strHoten, string strGioiTinh, string strSDT, string strDiaChi, string strNgaySinh)
         {
             try
             {
@@ -73,13 +80,10 @@ namespace Bao_Hanh
                 {
                     if (MessageBox.Show("Thông tin này đã tồn tại, bạn có muốn cập nhật", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                     {
-                        if (txtHoVaTen.Text.Equals("") || txtPhone.Text.Equals(""))
+                        //Kiểm trả thông tin trước khi cập nhật 
+                        if (!f_validate_save()) { return; }
+                        else
                         {
-                            Util.f_Notify("Thông tin khách hàng không được để trống ", false);
-                            return;
-                        }
-                        else 
-                        { 
                             string sql_capnhat = string.Format("update tbl_KhachHang set TenKhachHang = N'{1}', GioiTinh = N'{2}', NgaySinh = CONVERT(DATE,'{3}'), DiaChi = N'{4}', SDT = {5} where MaKH = '{0}'",
                                 strMaKh, strHoten, strGioiTinh, strNgaySinh, strDiaChi, strSDT
                                 );
@@ -96,8 +100,9 @@ namespace Bao_Hanh
                         }
                     }
                 }
-                else // Thêm mới
+                else //Thêm mới 
                 {
+                    f_validate_save();
                     string sql_themmoi = string.Format("INSERT INTO tbl_KhachHang(MaKH,TenKhachHang, GioiTinh, NgaySinh, DiaChi, SDT) VALUES ('{0}',N'{1}',{2},'{3}',{4})",
                            strMaKh, strHoten, strGioiTinh, strNgaySinh, strDiaChi, strSDT
                            );
@@ -118,8 +123,6 @@ namespace Bao_Hanh
                 Util.f_Notify("Thêm khách hàng thất bại !", false);
                 return;
             }
-            Util.f_Notify("Thêm khách hàng thành công !", true);
-
         }
 
         private void f_Delete(string strMaKh)
@@ -216,23 +219,16 @@ namespace Bao_Hanh
             }
             f_Delete(strMakh);
         }
-        private void txtPhone_Enter(object sender, EventArgs e)
-        {
-            f_validate_save();
-        }
-
         private void btn_Save_Click(object sender, EventArgs e)
         {
-            f_save(txtMaKH.Text, txtHoVaTen.Text, cbo_GioiTinh.Text, txtPhone.Text, txtDiaChi.Text, Convert.ToDateTime(cboNgaySinh.EditValue));
-        }
-        private void txt_sdt_Leave(object sender, EventArgs e)
-        {
-            f_validate_save();
-        }
+            string strMaKH = txtMaKH.Text.Trim();
+            string strTen = txtHoVaTen.Text.Trim();
+            string strPhone = txtPhone.Text.Trim();
+            string strDiaChi = txtDiaChi.Text.Trim();
+            string strGioiTinh = cbo_GioiTinh.SelectedText.Trim();
+            string strNgaySinh = cboNgaySinh.EditValue.ToString();
 
-        private void txtPhone_KeyDown(object sender, KeyEventArgs e)
-        {
-            // txtPhone.SelectAll();
+            f_save(strMaKH, strTen, strGioiTinh, strPhone, strDiaChi, strNgaySinh);
         }
         private void btn_TimKiem_Click(object sender, EventArgs e)
         {

@@ -31,6 +31,13 @@ namespace Bao_Hanh
 
             }
         }
+        bool KiemTraTonTai(string makh, string sdt)
+        {
+            string sql = "select * from tbl_KhachHang where MaKH = '" + makh + "' or SDT = '"+sdt+"' ";
+            DataTable dt = new DataTable();
+            dt = Util.GetData(sql);
+            return dt.Rows.Count > 0 ? true : false;
+        }
         private void f_TimKiem(string strMaKh, string strSDT)
         {
             try
@@ -42,19 +49,22 @@ namespace Bao_Hanh
                 }
                 else
                 {
-                    DataTable dt = new DataTable();
-                    string sql_timkiem = string.Format("Select MaKH,TenKhachHang, GioiTinh, NgaySinh, DiaChi, SDT FROM dbo.tbl_KhachHang Where  MaKH = '{0}' OR SDT = '{1}'",
-                                 strMaKh, strSDT
-                                 );
-                    dt = Util.GetData(sql_timkiem);
-                    gc_Data.DataSource = dt;
-                    if (gv_Data != null)
+                    if (KiemTraTonTai(strMaKh, strSDT))
                     {
-                        Util.f_Notify("Tìm kiếm khách hàng thành công", true);
+                        DataTable dt = new DataTable();
+                        string sql_timkiem = string.Format("Select MaKH,TenKhachHang, GioiTinh, NgaySinh, DiaChi, SDT FROM dbo.tbl_KhachHang Where  MaKH = '{0}' OR SDT = '{1}'",
+                                     strMaKh, strSDT
+                                     );
+                        dt = Util.GetData(sql_timkiem);
+                        if (dt != null)
+                        {
+                            gc_Data.DataSource = dt;
+                            Util.f_Notify("Tìm kiếm khách hàng thành công", true);
+                        }
                     }
                     else
                     {
-                        Util.f_Notify("Tìm kiếm khách hàng thất bại", false);
+                        Util.f_Notify("Khách hàng không tồn tại", false);
                     }
                 }
             }
@@ -69,7 +79,6 @@ namespace Bao_Hanh
             string strPhone = txtPhone.Text.Trim();
             f_TimKiem(strMaKH, strPhone);
         }
-
         private void btn_Clear_Click(object sender, EventArgs e)
         {
             txtPhone.Text = string.Empty;

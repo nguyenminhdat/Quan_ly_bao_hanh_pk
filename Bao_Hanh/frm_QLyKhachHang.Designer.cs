@@ -47,13 +47,13 @@
             this.cbo_GioiTinh = new DevExpress.XtraEditors.ComboBoxEdit();
             this.txtPhone = new DevExpress.XtraEditors.TextEdit();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.btn_TimKiem = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_Delete = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_Save = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_Clear = new DevExpress.XtraEditors.SimpleButton();
             this.txtDiaChi = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.cboNgaySinh = new DevExpress.XtraEditors.DateEdit();
-            this.btn_Clear = new DevExpress.XtraEditors.SimpleButton();
-            this.btn_Save = new DevExpress.XtraEditors.SimpleButton();
-            this.btn_Delete = new DevExpress.XtraEditors.SimpleButton();
-            this.btn_TimKiem = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.gv_Data)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gc_Data)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
@@ -276,9 +276,6 @@
             this.txtPhone.Properties.Mask.UseMaskAsDisplayFormat = true;
             this.txtPhone.Size = new System.Drawing.Size(213, 30);
             this.txtPhone.TabIndex = 26;
-            this.txtPhone.Enter += new System.EventHandler(this.txtPhone_Enter);
-            this.txtPhone.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPhone_KeyDown);
-            this.txtPhone.Leave += new System.EventHandler(this.txt_sdt_Leave);
             // 
             // panelControl1
             // 
@@ -303,6 +300,74 @@
             this.panelControl1.Name = "panelControl1";
             this.panelControl1.Size = new System.Drawing.Size(1029, 192);
             this.panelControl1.TabIndex = 2;
+            // 
+            // btn_TimKiem
+            // 
+            this.btn_TimKiem.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(185)))), ((int)(((byte)(255)))));
+            this.btn_TimKiem.Appearance.BackColor2 = System.Drawing.Color.White;
+            this.btn_TimKiem.Appearance.BorderColor = System.Drawing.Color.Blue;
+            this.btn_TimKiem.Appearance.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+            this.btn_TimKiem.Appearance.Options.UseBackColor = true;
+            this.btn_TimKiem.Appearance.Options.UseBorderColor = true;
+            this.btn_TimKiem.Appearance.Options.UseFont = true;
+            this.btn_TimKiem.Location = new System.Drawing.Point(650, 134);
+            this.btn_TimKiem.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_TimKiem.Name = "btn_TimKiem";
+            this.btn_TimKiem.Size = new System.Drawing.Size(137, 41);
+            this.btn_TimKiem.TabIndex = 43;
+            this.btn_TimKiem.Text = "Tìm kiếm";
+            this.btn_TimKiem.Click += new System.EventHandler(this.btn_TimKiem_Click);
+            // 
+            // btn_Delete
+            // 
+            this.btn_Delete.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(185)))), ((int)(((byte)(255)))));
+            this.btn_Delete.Appearance.BackColor2 = System.Drawing.Color.White;
+            this.btn_Delete.Appearance.BorderColor = System.Drawing.Color.Blue;
+            this.btn_Delete.Appearance.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+            this.btn_Delete.Appearance.Options.UseBackColor = true;
+            this.btn_Delete.Appearance.Options.UseBorderColor = true;
+            this.btn_Delete.Appearance.Options.UseFont = true;
+            this.btn_Delete.Location = new System.Drawing.Point(498, 134);
+            this.btn_Delete.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Delete.Name = "btn_Delete";
+            this.btn_Delete.Size = new System.Drawing.Size(137, 41);
+            this.btn_Delete.TabIndex = 42;
+            this.btn_Delete.Text = "Xóa";
+            this.btn_Delete.Click += new System.EventHandler(this.btn_Delete_Click);
+            // 
+            // btn_Save
+            // 
+            this.btn_Save.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(185)))), ((int)(((byte)(255)))));
+            this.btn_Save.Appearance.BackColor2 = System.Drawing.Color.White;
+            this.btn_Save.Appearance.BorderColor = System.Drawing.Color.Blue;
+            this.btn_Save.Appearance.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+            this.btn_Save.Appearance.Options.UseBackColor = true;
+            this.btn_Save.Appearance.Options.UseBorderColor = true;
+            this.btn_Save.Appearance.Options.UseFont = true;
+            this.btn_Save.Location = new System.Drawing.Point(342, 134);
+            this.btn_Save.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Save.Name = "btn_Save";
+            this.btn_Save.Size = new System.Drawing.Size(137, 41);
+            this.btn_Save.TabIndex = 41;
+            this.btn_Save.Text = "Lưu";
+            this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click);
+            // 
+            // btn_Clear
+            // 
+            this.btn_Clear.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(185)))), ((int)(((byte)(255)))));
+            this.btn_Clear.Appearance.BackColor2 = System.Drawing.Color.White;
+            this.btn_Clear.Appearance.BorderColor = System.Drawing.Color.Blue;
+            this.btn_Clear.Appearance.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+            this.btn_Clear.Appearance.Options.UseBackColor = true;
+            this.btn_Clear.Appearance.Options.UseBorderColor = true;
+            this.btn_Clear.Appearance.Options.UseFont = true;
+            this.btn_Clear.Location = new System.Drawing.Point(190, 134);
+            this.btn_Clear.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Clear.Name = "btn_Clear";
+            this.btn_Clear.Size = new System.Drawing.Size(137, 41);
+            this.btn_Clear.TabIndex = 40;
+            this.btn_Clear.Text = "Clear";
+            this.btn_Clear.Click += new System.EventHandler(this.btn_Clear_Click);
             // 
             // txtDiaChi
             // 
@@ -348,74 +413,6 @@
             this.cboNgaySinh.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.cboNgaySinh.Size = new System.Drawing.Size(213, 30);
             this.cboNgaySinh.TabIndex = 39;
-            // 
-            // btn_Clear
-            // 
-            this.btn_Clear.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(185)))), ((int)(((byte)(255)))));
-            this.btn_Clear.Appearance.BackColor2 = System.Drawing.Color.White;
-            this.btn_Clear.Appearance.BorderColor = System.Drawing.Color.Blue;
-            this.btn_Clear.Appearance.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
-            this.btn_Clear.Appearance.Options.UseBackColor = true;
-            this.btn_Clear.Appearance.Options.UseBorderColor = true;
-            this.btn_Clear.Appearance.Options.UseFont = true;
-            this.btn_Clear.Location = new System.Drawing.Point(154, 134);
-            this.btn_Clear.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_Clear.Name = "btn_Clear";
-            this.btn_Clear.Size = new System.Drawing.Size(137, 41);
-            this.btn_Clear.TabIndex = 40;
-            this.btn_Clear.Text = "Clear";
-            this.btn_Clear.Click += new System.EventHandler(this.btn_Clear_Click);
-            // 
-            // btn_Save
-            // 
-            this.btn_Save.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(185)))), ((int)(((byte)(255)))));
-            this.btn_Save.Appearance.BackColor2 = System.Drawing.Color.White;
-            this.btn_Save.Appearance.BorderColor = System.Drawing.Color.Blue;
-            this.btn_Save.Appearance.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
-            this.btn_Save.Appearance.Options.UseBackColor = true;
-            this.btn_Save.Appearance.Options.UseBorderColor = true;
-            this.btn_Save.Appearance.Options.UseFont = true;
-            this.btn_Save.Location = new System.Drawing.Point(303, 134);
-            this.btn_Save.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_Save.Name = "btn_Save";
-            this.btn_Save.Size = new System.Drawing.Size(137, 41);
-            this.btn_Save.TabIndex = 41;
-            this.btn_Save.Text = "Lưu";
-            this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click);
-            // 
-            // btn_Delete
-            // 
-            this.btn_Delete.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(185)))), ((int)(((byte)(255)))));
-            this.btn_Delete.Appearance.BackColor2 = System.Drawing.Color.White;
-            this.btn_Delete.Appearance.BorderColor = System.Drawing.Color.Blue;
-            this.btn_Delete.Appearance.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
-            this.btn_Delete.Appearance.Options.UseBackColor = true;
-            this.btn_Delete.Appearance.Options.UseBorderColor = true;
-            this.btn_Delete.Appearance.Options.UseFont = true;
-            this.btn_Delete.Location = new System.Drawing.Point(444, 134);
-            this.btn_Delete.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_Delete.Name = "btn_Delete";
-            this.btn_Delete.Size = new System.Drawing.Size(137, 41);
-            this.btn_Delete.TabIndex = 42;
-            this.btn_Delete.Text = "Xóa";
-            this.btn_Delete.Click += new System.EventHandler(this.btn_Delete_Click);
-            // 
-            // btn_TimKiem
-            // 
-            this.btn_TimKiem.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(185)))), ((int)(((byte)(255)))));
-            this.btn_TimKiem.Appearance.BackColor2 = System.Drawing.Color.White;
-            this.btn_TimKiem.Appearance.BorderColor = System.Drawing.Color.Blue;
-            this.btn_TimKiem.Appearance.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
-            this.btn_TimKiem.Appearance.Options.UseBackColor = true;
-            this.btn_TimKiem.Appearance.Options.UseBorderColor = true;
-            this.btn_TimKiem.Appearance.Options.UseFont = true;
-            this.btn_TimKiem.Location = new System.Drawing.Point(585, 134);
-            this.btn_TimKiem.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_TimKiem.Name = "btn_TimKiem";
-            this.btn_TimKiem.Size = new System.Drawing.Size(137, 41);
-            this.btn_TimKiem.TabIndex = 43;
-            this.btn_TimKiem.Text = "Tìm kiếm";
-            this.btn_TimKiem.Click += new System.EventHandler(this.btn_TimKiem_Click);
             // 
             // frm_QLyKhachHang
             // 
