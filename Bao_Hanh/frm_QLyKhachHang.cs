@@ -129,7 +129,7 @@ namespace Bao_Hanh
                 // Nếu tồn tại thì thông báo cập nhật thông tin
                 if (KiemTraTonTai(strMaKh))
                 {
-                    if (MessageBox.Show("Bạn có muốn xóa khách hàng này không", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                    if (MessageBox.Show("Bạn có muốn xóa khách hàng "+strMaKh+" không", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                     {
                         string sql_delete = string.Format("delete tbl_KhachHang where MaKH = '{0}'",
                             strMaKh
@@ -207,7 +207,9 @@ namespace Bao_Hanh
 
         private void btn_Delete_Click(object sender, EventArgs e)
         {
-            f_Delete(txtMaKH.Text);
+            string strMakh;
+            strMakh = gv_Data.GetRowCellValue(gv_Data.FocusedRowHandle, "MaKH").ToString();
+            f_Delete(strMakh);
         }
         private void txtPhone_Enter(object sender, EventArgs e)
         {
