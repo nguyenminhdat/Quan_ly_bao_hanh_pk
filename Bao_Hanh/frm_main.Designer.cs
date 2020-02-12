@@ -67,6 +67,7 @@
             this.barButtonGroup1 = new DevExpress.XtraBars.BarButtonGroup();
             this.div_container = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormContainer();
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
+            this.btnQuanLyChucDanh = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             ((System.ComponentModel.ISupportInitialize)(this.pnl_qlbaohanh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).BeginInit();
@@ -109,7 +110,8 @@
             this.btn_timKiemKH,
             this.btn_danhsachBH,
             this.btn_taoDonBH,
-            this.accordionControlElement5});
+            this.accordionControlElement5,
+            this.btnQuanLyChucDanh});
             this.accordionControlElement3.Expanded = true;
             this.accordionControlElement3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement3.ImageOptions.Image")));
             this.accordionControlElement3.Name = "accordionControlElement3";
@@ -144,6 +146,7 @@
             this.btn_taoDonBH.Name = "btn_taoDonBH";
             this.btn_taoDonBH.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btn_taoDonBH.Text = "Tạo đơn bảo hành";
+            this.btn_taoDonBH.Click += new System.EventHandler(this.btn_taoDonBH_Click);
             // 
             // accordionControlElement5
             // 
@@ -178,6 +181,7 @@
             // 
             // bar_QuanLyNhanVien
             // 
+            this.bar_QuanLyNhanVien.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("bar_QuanLyNhanVien.ImageOptions.Image")));
             this.bar_QuanLyNhanVien.Name = "bar_QuanLyNhanVien";
             this.bar_QuanLyNhanVien.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.bar_QuanLyNhanVien.Text = "QUản lý nhân viên";
@@ -393,6 +397,13 @@
             this.ribbonControl1.Size = new System.Drawing.Size(739, 116);
             this.ribbonControl1.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
             // 
+            // btnQuanLyChucDanh
+            // 
+            this.btnQuanLyChucDanh.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnQuanLyChucDanh.ImageOptions.Image")));
+            this.btnQuanLyChucDanh.Name = "btnQuanLyChucDanh";
+            this.btnQuanLyChucDanh.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.btnQuanLyChucDanh.Text = "Quản lý chức danh";
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -460,6 +471,7 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup4;
         private DevExpress.XtraBars.Navigation.AccordionControlElement acc_QuanTri;
         private DevExpress.XtraBars.Navigation.AccordionControlElement bar_QuanLyNhanVien;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement btnQuanLyChucDanh;
     }
 }
 

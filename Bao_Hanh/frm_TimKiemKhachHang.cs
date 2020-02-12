@@ -16,5 +16,64 @@ namespace Bao_Hanh
         {
             InitializeComponent();
         }
+        void LoadData()
+        {
+            try
+            {
+                DataTable dt = new DataTable();
+                string sql = "SELECT MaKH,TenKhachHang, GioiTinh, NgaySinh, DiaChi, SDT FROM dbo.tbl_KhachHang";
+                dt = Util.GetData(sql);
+                gc_Data.DataSource = dt;
+            }
+            catch (Exception ex)
+            {
+                Util.f_Notify("Không load được dữ liệu", false);
+
+            }
+        }
+        private void f_TimKiem(string strMaKh, string strSDT)
+        {
+            try
+            {
+                if (txtPhone.Text.Equals("") && txtMaKH.Text.Equals(""))
+                {
+                    LoadData();
+                    Util.f_Notify("Tìm kiếm khách hàng thành công", true);
+                }
+                else
+                {
+                    DataTable dt = new DataTable();
+                    string sql_timkiem = string.Format("Select MaKH,TenKhachHang, GioiTinh, NgaySinh, DiaChi, SDT FROM dbo.tbl_KhachHang Where  MaKH = '{0}' OR SDT = '{1}'",
+                                 strMaKh, strSDT
+                                 );
+                    dt = Util.GetData(sql_timkiem);
+                    gc_Data.DataSource = dt;
+                    if (gv_Data != null)
+                    {
+                        Util.f_Notify("Tìm kiếm khách hàng thành công", true);
+                    }
+                    else
+                    {
+                        Util.f_Notify("Tìm kiếm khách hàng thất bại", false);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Util.f_Notify("Lỗi khi tìm kiếm khách hàng :" + ex.Message, false);
+            }
+        }
+        private void btn_timKiem_Click(object sender, EventArgs e)
+        {
+            string strMaKH = txtMaKH.Text.Trim();
+            string strPhone = txtPhone.Text.Trim();
+            f_TimKiem(strMaKH, strPhone);
+        }
+
+        private void btn_Clear_Click(object sender, EventArgs e)
+        {
+            txtPhone.Text = string.Empty;
+            txtMaKH.Text = string.Empty;
+        }
     }
 }

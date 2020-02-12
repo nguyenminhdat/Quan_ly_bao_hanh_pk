@@ -28,18 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.btn_TimKiem = new System.Windows.Forms.Button();
-            this.btn_Delete = new System.Windows.Forms.Button();
-            this.btn_Save = new System.Windows.Forms.Button();
-            this.btn_Clear = new System.Windows.Forms.Button();
+            this.cSDT = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.cNgaySinh = new DevExpress.XtraGrid.Columns.GridColumn();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
-            this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.cGioiTinh = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.cTenKH = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.cMaKH = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gv_Data = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.cDiaChi = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gc_Data = new DevExpress.XtraGrid.GridControl();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.lblPhone = new DevExpress.XtraEditors.LabelControl();
@@ -54,6 +50,10 @@
             this.txtDiaChi = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.cboNgaySinh = new DevExpress.XtraEditors.DateEdit();
+            this.btn_Clear = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_Save = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_Delete = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_TimKiem = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.gv_Data)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gc_Data)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
@@ -69,83 +69,25 @@
             ((System.ComponentModel.ISupportInitialize)(this.cboNgaySinh.Properties)).BeginInit();
             this.SuspendLayout();
             // 
-            // gridColumn6
+            // cSDT
             // 
-            this.gridColumn6.Caption = "Số điện thoại";
-            this.gridColumn6.FieldName = "SDT";
-            this.gridColumn6.Name = "gridColumn6";
-            this.gridColumn6.Visible = true;
-            this.gridColumn6.VisibleIndex = 5;
-            this.gridColumn6.Width = 94;
+            this.cSDT.Caption = "Số điện thoại";
+            this.cSDT.FieldName = "SDT";
+            this.cSDT.Name = "cSDT";
+            this.cSDT.OptionsColumn.AllowEdit = false;
+            this.cSDT.Visible = true;
+            this.cSDT.VisibleIndex = 5;
+            this.cSDT.Width = 94;
             // 
-            // gridColumn4
+            // cNgaySinh
             // 
-            this.gridColumn4.Caption = "Ngày Sinh";
-            this.gridColumn4.FieldName = "NgaySinh";
-            this.gridColumn4.Name = "gridColumn4";
-            this.gridColumn4.Visible = true;
-            this.gridColumn4.VisibleIndex = 3;
-            this.gridColumn4.Width = 92;
-            // 
-            // btn_TimKiem
-            // 
-            this.btn_TimKiem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(185)))), ((int)(((byte)(255)))));
-            this.btn_TimKiem.FlatAppearance.BorderSize = 0;
-            this.btn_TimKiem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_TimKiem.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
-            this.btn_TimKiem.ForeColor = System.Drawing.Color.White;
-            this.btn_TimKiem.Location = new System.Drawing.Point(631, 143);
-            this.btn_TimKiem.Name = "btn_TimKiem";
-            this.btn_TimKiem.Size = new System.Drawing.Size(137, 32);
-            this.btn_TimKiem.TabIndex = 38;
-            this.btn_TimKiem.Text = "Tìm kiếm";
-            this.btn_TimKiem.UseVisualStyleBackColor = false;
-            this.btn_TimKiem.Click += new System.EventHandler(this.btn_TimKiem_Click);
-            // 
-            // btn_Delete
-            // 
-            this.btn_Delete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(185)))), ((int)(((byte)(255)))));
-            this.btn_Delete.FlatAppearance.BorderSize = 0;
-            this.btn_Delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Delete.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
-            this.btn_Delete.ForeColor = System.Drawing.Color.White;
-            this.btn_Delete.Location = new System.Drawing.Point(470, 143);
-            this.btn_Delete.Name = "btn_Delete";
-            this.btn_Delete.Size = new System.Drawing.Size(137, 32);
-            this.btn_Delete.TabIndex = 37;
-            this.btn_Delete.Text = "Xóa";
-            this.btn_Delete.UseVisualStyleBackColor = false;
-            this.btn_Delete.Click += new System.EventHandler(this.btn_Delete_Click);
-            // 
-            // btn_Save
-            // 
-            this.btn_Save.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(185)))), ((int)(((byte)(255)))));
-            this.btn_Save.FlatAppearance.BorderSize = 0;
-            this.btn_Save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Save.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
-            this.btn_Save.ForeColor = System.Drawing.Color.White;
-            this.btn_Save.Location = new System.Drawing.Point(314, 143);
-            this.btn_Save.Name = "btn_Save";
-            this.btn_Save.Size = new System.Drawing.Size(137, 32);
-            this.btn_Save.TabIndex = 36;
-            this.btn_Save.Text = "Lưu";
-            this.btn_Save.UseVisualStyleBackColor = false;
-            this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click);
-            // 
-            // btn_Clear
-            // 
-            this.btn_Clear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(185)))), ((int)(((byte)(255)))));
-            this.btn_Clear.FlatAppearance.BorderSize = 0;
-            this.btn_Clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Clear.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
-            this.btn_Clear.ForeColor = System.Drawing.Color.White;
-            this.btn_Clear.Location = new System.Drawing.Point(154, 143);
-            this.btn_Clear.Name = "btn_Clear";
-            this.btn_Clear.Size = new System.Drawing.Size(137, 32);
-            this.btn_Clear.TabIndex = 35;
-            this.btn_Clear.Text = "Clear";
-            this.btn_Clear.UseVisualStyleBackColor = false;
-            this.btn_Clear.Click += new System.EventHandler(this.btn_Clear_Click);
+            this.cNgaySinh.Caption = "Ngày Sinh";
+            this.cNgaySinh.FieldName = "NgaySinh";
+            this.cNgaySinh.Name = "cNgaySinh";
+            this.cNgaySinh.OptionsColumn.AllowEdit = false;
+            this.cNgaySinh.Visible = true;
+            this.cNgaySinh.VisibleIndex = 3;
+            this.cNgaySinh.Width = 92;
             // 
             // labelControl6
             // 
@@ -157,32 +99,35 @@
             this.labelControl6.TabIndex = 34;
             this.labelControl6.Text = "Ngày sinh :";
             // 
-            // gridColumn3
+            // cGioiTinh
             // 
-            this.gridColumn3.Caption = "Giới Tính";
-            this.gridColumn3.FieldName = "GioiTinh";
-            this.gridColumn3.Name = "gridColumn3";
-            this.gridColumn3.Visible = true;
-            this.gridColumn3.VisibleIndex = 2;
-            this.gridColumn3.Width = 78;
+            this.cGioiTinh.Caption = "Giới Tính";
+            this.cGioiTinh.FieldName = "GioiTinh";
+            this.cGioiTinh.Name = "cGioiTinh";
+            this.cGioiTinh.OptionsColumn.AllowEdit = false;
+            this.cGioiTinh.Visible = true;
+            this.cGioiTinh.VisibleIndex = 2;
+            this.cGioiTinh.Width = 78;
             // 
-            // gridColumn2
+            // cTenKH
             // 
-            this.gridColumn2.Caption = "Tên KH";
-            this.gridColumn2.FieldName = "TenKhachHang";
-            this.gridColumn2.Name = "gridColumn2";
-            this.gridColumn2.Visible = true;
-            this.gridColumn2.VisibleIndex = 1;
-            this.gridColumn2.Width = 222;
+            this.cTenKH.Caption = "Tên KH";
+            this.cTenKH.FieldName = "TenKhachHang";
+            this.cTenKH.Name = "cTenKH";
+            this.cTenKH.OptionsColumn.AllowEdit = false;
+            this.cTenKH.Visible = true;
+            this.cTenKH.VisibleIndex = 1;
+            this.cTenKH.Width = 222;
             // 
-            // gridColumn1
+            // cMaKH
             // 
-            this.gridColumn1.Caption = "MaKH";
-            this.gridColumn1.FieldName = "MaKH";
-            this.gridColumn1.Name = "gridColumn1";
-            this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 0;
-            this.gridColumn1.Width = 59;
+            this.cMaKH.Caption = "MaKH";
+            this.cMaKH.FieldName = "MaKH";
+            this.cMaKH.Name = "cMaKH";
+            this.cMaKH.OptionsColumn.AllowEdit = false;
+            this.cMaKH.Visible = true;
+            this.cMaKH.VisibleIndex = 0;
+            this.cMaKH.Width = 59;
             // 
             // gv_Data
             // 
@@ -195,25 +140,26 @@
             this.gv_Data.Appearance.SelectedRow.BackColor = System.Drawing.Color.Silver;
             this.gv_Data.Appearance.SelectedRow.Options.UseBackColor = true;
             this.gv_Data.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.gridColumn1,
-            this.gridColumn2,
-            this.gridColumn3,
-            this.gridColumn4,
-            this.gridColumn5,
-            this.gridColumn6});
+            this.cMaKH,
+            this.cTenKH,
+            this.cGioiTinh,
+            this.cNgaySinh,
+            this.cDiaChi,
+            this.cSDT});
             this.gv_Data.GridControl = this.gc_Data;
             this.gv_Data.Name = "gv_Data";
-            this.gv_Data.OptionsCustomization.AllowGroup = false;
+            this.gv_Data.RowClick += new DevExpress.XtraGrid.Views.Grid.RowClickEventHandler(this.gv_Data_RowClick);
             this.gv_Data.CustomDrawRowIndicator += new DevExpress.XtraGrid.Views.Grid.RowIndicatorCustomDrawEventHandler(this.gv_Data_CustomDrawRowIndicator);
             // 
-            // gridColumn5
+            // cDiaChi
             // 
-            this.gridColumn5.Caption = "Địa chỉ";
-            this.gridColumn5.FieldName = "DiaChi";
-            this.gridColumn5.Name = "gridColumn5";
-            this.gridColumn5.Visible = true;
-            this.gridColumn5.VisibleIndex = 4;
-            this.gridColumn5.Width = 147;
+            this.cDiaChi.Caption = "Địa chỉ";
+            this.cDiaChi.FieldName = "DiaChi";
+            this.cDiaChi.Name = "cDiaChi";
+            this.cDiaChi.OptionsColumn.AllowEdit = false;
+            this.cDiaChi.Visible = true;
+            this.cDiaChi.VisibleIndex = 4;
+            this.cDiaChi.Width = 147;
             // 
             // gc_Data
             // 
@@ -393,11 +339,83 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cboNgaySinh.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cboNgaySinh.Properties.DisplayFormat.FormatString = "dd/MM/yyyy";
+            this.cboNgaySinh.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.cboNgaySinh.Properties.EditFormat.FormatString = "dd/MM/yyyy";
+            this.cboNgaySinh.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.cboNgaySinh.Properties.Mask.EditMask = "";
             this.cboNgaySinh.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.None;
             this.cboNgaySinh.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.cboNgaySinh.Size = new System.Drawing.Size(213, 30);
             this.cboNgaySinh.TabIndex = 39;
+            // 
+            // btn_Clear
+            // 
+            this.btn_Clear.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(185)))), ((int)(((byte)(255)))));
+            this.btn_Clear.Appearance.BackColor2 = System.Drawing.Color.White;
+            this.btn_Clear.Appearance.BorderColor = System.Drawing.Color.Blue;
+            this.btn_Clear.Appearance.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+            this.btn_Clear.Appearance.Options.UseBackColor = true;
+            this.btn_Clear.Appearance.Options.UseBorderColor = true;
+            this.btn_Clear.Appearance.Options.UseFont = true;
+            this.btn_Clear.Location = new System.Drawing.Point(154, 134);
+            this.btn_Clear.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Clear.Name = "btn_Clear";
+            this.btn_Clear.Size = new System.Drawing.Size(137, 41);
+            this.btn_Clear.TabIndex = 40;
+            this.btn_Clear.Text = "Clear";
+            this.btn_Clear.Click += new System.EventHandler(this.btn_Clear_Click);
+            // 
+            // btn_Save
+            // 
+            this.btn_Save.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(185)))), ((int)(((byte)(255)))));
+            this.btn_Save.Appearance.BackColor2 = System.Drawing.Color.White;
+            this.btn_Save.Appearance.BorderColor = System.Drawing.Color.Blue;
+            this.btn_Save.Appearance.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+            this.btn_Save.Appearance.Options.UseBackColor = true;
+            this.btn_Save.Appearance.Options.UseBorderColor = true;
+            this.btn_Save.Appearance.Options.UseFont = true;
+            this.btn_Save.Location = new System.Drawing.Point(303, 134);
+            this.btn_Save.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Save.Name = "btn_Save";
+            this.btn_Save.Size = new System.Drawing.Size(137, 41);
+            this.btn_Save.TabIndex = 41;
+            this.btn_Save.Text = "Lưu";
+            this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click);
+            // 
+            // btn_Delete
+            // 
+            this.btn_Delete.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(185)))), ((int)(((byte)(255)))));
+            this.btn_Delete.Appearance.BackColor2 = System.Drawing.Color.White;
+            this.btn_Delete.Appearance.BorderColor = System.Drawing.Color.Blue;
+            this.btn_Delete.Appearance.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+            this.btn_Delete.Appearance.Options.UseBackColor = true;
+            this.btn_Delete.Appearance.Options.UseBorderColor = true;
+            this.btn_Delete.Appearance.Options.UseFont = true;
+            this.btn_Delete.Location = new System.Drawing.Point(444, 134);
+            this.btn_Delete.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Delete.Name = "btn_Delete";
+            this.btn_Delete.Size = new System.Drawing.Size(137, 41);
+            this.btn_Delete.TabIndex = 42;
+            this.btn_Delete.Text = "Xóa";
+            this.btn_Delete.Click += new System.EventHandler(this.btn_Delete_Click);
+            // 
+            // btn_TimKiem
+            // 
+            this.btn_TimKiem.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(185)))), ((int)(((byte)(255)))));
+            this.btn_TimKiem.Appearance.BackColor2 = System.Drawing.Color.White;
+            this.btn_TimKiem.Appearance.BorderColor = System.Drawing.Color.Blue;
+            this.btn_TimKiem.Appearance.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+            this.btn_TimKiem.Appearance.Options.UseBackColor = true;
+            this.btn_TimKiem.Appearance.Options.UseBorderColor = true;
+            this.btn_TimKiem.Appearance.Options.UseFont = true;
+            this.btn_TimKiem.Location = new System.Drawing.Point(585, 134);
+            this.btn_TimKiem.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_TimKiem.Name = "btn_TimKiem";
+            this.btn_TimKiem.Size = new System.Drawing.Size(137, 41);
+            this.btn_TimKiem.TabIndex = 43;
+            this.btn_TimKiem.Text = "Tìm kiếm";
+            this.btn_TimKiem.Click += new System.EventHandler(this.btn_TimKiem_Click);
             // 
             // frm_QLyKhachHang
             // 
@@ -429,18 +447,14 @@
 
         #endregion
 
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
-        private System.Windows.Forms.Button btn_TimKiem;
-        private System.Windows.Forms.Button btn_Delete;
-        private System.Windows.Forms.Button btn_Save;
-        private System.Windows.Forms.Button btn_Clear;
+        private DevExpress.XtraGrid.Columns.GridColumn cSDT;
+        private DevExpress.XtraGrid.Columns.GridColumn cNgaySinh;
         private DevExpress.XtraEditors.LabelControl labelControl6;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
+        private DevExpress.XtraGrid.Columns.GridColumn cGioiTinh;
+        private DevExpress.XtraGrid.Columns.GridColumn cTenKH;
+        private DevExpress.XtraGrid.Columns.GridColumn cMaKH;
         private DevExpress.XtraGrid.Views.Grid.GridView gv_Data;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
+        private DevExpress.XtraGrid.Columns.GridColumn cDiaChi;
         private DevExpress.XtraGrid.GridControl gc_Data;
         private DevExpress.XtraEditors.PanelControl panelControl2;
         private DevExpress.XtraEditors.LabelControl lblPhone;
@@ -455,5 +469,9 @@
         private DevExpress.XtraEditors.TextEdit txtDiaChi;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.DateEdit cboNgaySinh;
+        private DevExpress.XtraEditors.SimpleButton btn_TimKiem;
+        private DevExpress.XtraEditors.SimpleButton btn_Delete;
+        private DevExpress.XtraEditors.SimpleButton btn_Save;
+        private DevExpress.XtraEditors.SimpleButton btn_Clear;
     }
 }
