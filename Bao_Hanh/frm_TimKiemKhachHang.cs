@@ -33,7 +33,7 @@ namespace Bao_Hanh
         }
         bool KiemTraTonTai(string makh, string sdt)
         {
-            string sql = "select * from tbl_KhachHang where MaKH = '" + makh + "' or SDT = '"+sdt+"' ";
+            string sql = "select * from tbl_KhachHang where MaKH = '" + makh + "' or SDT = '" + sdt + "' ";
             DataTable dt = new DataTable();
             dt = Util.GetData(sql);
             return dt.Rows.Count > 0 ? true : false;
@@ -63,7 +63,7 @@ namespace Bao_Hanh
                         }
                         else
                         {
-                            Util.f_Notify("Chưa có danh sách khách hàng",true);
+                            Util.f_Notify("Chưa có danh sách khách hàng", true);
                         }
                     }
                     else
@@ -88,5 +88,11 @@ namespace Bao_Hanh
             txtPhone.Text = string.Empty;
             txtMaKH.Text = string.Empty;
         }
+
+        void f_from_formTaoDonHang()
+        { 
+                
+        
+        } 
     }
 }

@@ -167,7 +167,7 @@
             this.gc_Data.Location = new System.Drawing.Point(2, 2);
             this.gc_Data.MainView = this.gv_Data;
             this.gc_Data.Name = "gc_Data";
-            this.gc_Data.Size = new System.Drawing.Size(1025, 408);
+            this.gc_Data.Size = new System.Drawing.Size(1025, 335);
             this.gc_Data.TabIndex = 1;
             this.gc_Data.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gv_Data});
@@ -176,9 +176,9 @@
             // 
             this.panelControl2.Controls.Add(this.gc_Data);
             this.panelControl2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelControl2.Location = new System.Drawing.Point(0, 123);
+            this.panelControl2.Location = new System.Drawing.Point(0, 196);
             this.panelControl2.Name = "panelControl2";
-            this.panelControl2.Size = new System.Drawing.Size(1029, 412);
+            this.panelControl2.Size = new System.Drawing.Size(1029, 339);
             this.panelControl2.TabIndex = 3;
             // 
             // lblPhone
@@ -298,7 +298,7 @@
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl1.Location = new System.Drawing.Point(0, 0);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(1029, 123);
+            this.panelControl1.Size = new System.Drawing.Size(1029, 196);
             this.panelControl1.TabIndex = 2;
             // 
             // btn_TimKiem

@@ -66,7 +66,7 @@
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupControl1.Location = new System.Drawing.Point(0, 0);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(822, 73);
+            this.groupControl1.Size = new System.Drawing.Size(822, 96);
             this.groupControl1.TabIndex = 19;
             this.groupControl1.Text = "groupControl1";
             // 
@@ -151,9 +151,9 @@
             this.panelControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.panelControl1.Controls.Add(this.gc_Data);
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelControl1.Location = new System.Drawing.Point(0, 73);
+            this.panelControl1.Location = new System.Drawing.Point(0, 96);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(822, 350);
+            this.panelControl1.Size = new System.Drawing.Size(822, 327);
             this.panelControl1.TabIndex = 20;
             // 
             // gc_Data
@@ -162,7 +162,7 @@
             this.gc_Data.Location = new System.Drawing.Point(0, 0);
             this.gc_Data.MainView = this.gv_Data;
             this.gc_Data.Name = "gc_Data";
-            this.gc_Data.Size = new System.Drawing.Size(822, 350);
+            this.gc_Data.Size = new System.Drawing.Size(822, 327);
             this.gc_Data.TabIndex = 0;
             this.gc_Data.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gv_Data});

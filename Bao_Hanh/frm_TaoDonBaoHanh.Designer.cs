@@ -32,23 +32,23 @@
             this.btn_InBill = new DevExpress.XtraEditors.SimpleButton();
             this.btn_HoanTat = new DevExpress.XtraEditors.SimpleButton();
             this.btn_Clear = new DevExpress.XtraEditors.SimpleButton();
-            this.txtDiaChi = new DevExpress.XtraEditors.TextEdit();
+            this.txtModelPK = new DevExpress.XtraEditors.TextEdit();
             this.txtHoVaTen = new DevExpress.XtraEditors.TextEdit();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
-            this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
+            this.txtThoiGianBH = new DevExpress.XtraEditors.LabelControl();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit5 = new DevExpress.XtraEditors.TextEdit();
+            this.txtPhiKhac = new DevExpress.XtraEditors.TextEdit();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
+            this.txtPhiBH = new DevExpress.XtraEditors.TextEdit();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.buttonEdit2 = new DevExpress.XtraEditors.ButtonEdit();
             this.buttonEdit1 = new DevExpress.XtraEditors.ButtonEdit();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
+            this.txtDichVu = new DevExpress.XtraEditors.TextEdit();
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.buttonEdit3 = new DevExpress.XtraEditors.ButtonEdit();
+            this.btnSeachKH = new DevExpress.XtraEditors.ButtonEdit();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
@@ -57,7 +57,7 @@
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.txtMakh = new DevExpress.XtraEditors.TextEdit();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit3 = new DevExpress.XtraEditors.MemoEdit();
+            this.txtNoiDung = new DevExpress.XtraEditors.MemoEdit();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
             this.panelControl5 = new DevExpress.XtraEditors.PanelControl();
@@ -78,24 +78,24 @@
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
             this.textEdit6 = new DevExpress.XtraEditors.TextEdit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtDiaChi.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtModelPK.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtHoVaTen.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPhiKhac.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPhiBH.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.buttonEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.buttonEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDichVu.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
             this.panelControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.buttonEdit3.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSeachKH.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_phone.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMakh.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNoiDung.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
@@ -142,6 +142,7 @@
             this.btn_HoanTat.Size = new System.Drawing.Size(137, 41);
             this.btn_HoanTat.TabIndex = 41;
             this.btn_HoanTat.Text = "Hoàn tất";
+            this.btn_HoanTat.Click += new System.EventHandler(this.btn_HoanTat_Click);
             // 
             // btn_Clear
             // 
@@ -158,17 +159,18 @@
             this.btn_Clear.Size = new System.Drawing.Size(137, 41);
             this.btn_Clear.TabIndex = 40;
             this.btn_Clear.Text = "Clear";
+            this.btn_Clear.Click += new System.EventHandler(this.btn_Clear_Click);
             // 
-            // txtDiaChi
+            // txtModelPK
             // 
-            this.txtDiaChi.EditValue = "";
-            this.txtDiaChi.Location = new System.Drawing.Point(567, 12);
-            this.txtDiaChi.Name = "txtDiaChi";
-            this.txtDiaChi.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
-            this.txtDiaChi.Properties.Appearance.Options.UseFont = true;
-            this.txtDiaChi.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.txtDiaChi.Size = new System.Drawing.Size(280, 30);
-            this.txtDiaChi.TabIndex = 25;
+            this.txtModelPK.EditValue = "";
+            this.txtModelPK.Location = new System.Drawing.Point(567, 12);
+            this.txtModelPK.Name = "txtModelPK";
+            this.txtModelPK.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
+            this.txtModelPK.Properties.Appearance.Options.UseFont = true;
+            this.txtModelPK.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            this.txtModelPK.Size = new System.Drawing.Size(280, 30);
+            this.txtModelPK.TabIndex = 25;
             // 
             // txtHoVaTen
             // 
@@ -182,42 +184,43 @@
             this.txtHoVaTen.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.txtHoVaTen.Properties.Mask.EditMask = "n0";
             this.txtHoVaTen.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.txtHoVaTen.Properties.ReadOnly = true;
             this.txtHoVaTen.Size = new System.Drawing.Size(213, 30);
             this.txtHoVaTen.TabIndex = 22;
             // 
             // panelControl1
             // 
-            this.panelControl1.Controls.Add(this.labelControl10);
+            this.panelControl1.Controls.Add(this.txtThoiGianBH);
             this.panelControl1.Controls.Add(this.labelControl9);
-            this.panelControl1.Controls.Add(this.textEdit5);
+            this.panelControl1.Controls.Add(this.txtPhiKhac);
             this.panelControl1.Controls.Add(this.labelControl8);
-            this.panelControl1.Controls.Add(this.textEdit4);
+            this.panelControl1.Controls.Add(this.txtPhiBH);
             this.panelControl1.Controls.Add(this.labelControl7);
             this.panelControl1.Controls.Add(this.labelControl6);
             this.panelControl1.Controls.Add(this.buttonEdit2);
             this.panelControl1.Controls.Add(this.buttonEdit1);
-            this.panelControl1.Controls.Add(this.textEdit2);
+            this.panelControl1.Controls.Add(this.txtDichVu);
             this.panelControl1.Controls.Add(this.panelControl3);
             this.panelControl1.Controls.Add(this.labelControl4);
             this.panelControl1.Controls.Add(this.groupControl1);
             this.panelControl1.Controls.Add(this.labelControl3);
-            this.panelControl1.Controls.Add(this.txtDiaChi);
-            this.panelControl1.Controls.Add(this.textEdit3);
+            this.panelControl1.Controls.Add(this.txtModelPK);
+            this.panelControl1.Controls.Add(this.txtNoiDung);
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl1.Location = new System.Drawing.Point(0, 0);
             this.panelControl1.Name = "panelControl1";
             this.panelControl1.Size = new System.Drawing.Size(1127, 221);
             this.panelControl1.TabIndex = 4;
             // 
-            // labelControl10
+            // txtThoiGianBH
             // 
-            this.labelControl10.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl10.Appearance.Options.UseFont = true;
-            this.labelControl10.Location = new System.Drawing.Point(1012, 107);
-            this.labelControl10.Name = "labelControl10";
-            this.labelControl10.Size = new System.Drawing.Size(59, 19);
-            this.labelControl10.TabIndex = 60;
-            this.labelControl10.Text = "....//...//";
+            this.txtThoiGianBH.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtThoiGianBH.Appearance.Options.UseFont = true;
+            this.txtThoiGianBH.Location = new System.Drawing.Point(1012, 107);
+            this.txtThoiGianBH.Name = "txtThoiGianBH";
+            this.txtThoiGianBH.Size = new System.Drawing.Size(61, 19);
+            this.txtThoiGianBH.TabIndex = 60;
+            this.txtThoiGianBH.Text = ".... Ngày";
             // 
             // labelControl9
             // 
@@ -229,16 +232,16 @@
             this.labelControl9.TabIndex = 59;
             this.labelControl9.Text = "Phí khác :";
             // 
-            // textEdit5
+            // txtPhiKhac
             // 
-            this.textEdit5.EditValue = "";
-            this.textEdit5.Location = new System.Drawing.Point(933, 48);
-            this.textEdit5.Name = "textEdit5";
-            this.textEdit5.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
-            this.textEdit5.Properties.Appearance.Options.UseFont = true;
-            this.textEdit5.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.textEdit5.Size = new System.Drawing.Size(186, 30);
-            this.textEdit5.TabIndex = 58;
+            this.txtPhiKhac.EditValue = "";
+            this.txtPhiKhac.Location = new System.Drawing.Point(933, 48);
+            this.txtPhiKhac.Name = "txtPhiKhac";
+            this.txtPhiKhac.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
+            this.txtPhiKhac.Properties.Appearance.Options.UseFont = true;
+            this.txtPhiKhac.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            this.txtPhiKhac.Size = new System.Drawing.Size(186, 30);
+            this.txtPhiKhac.TabIndex = 58;
             // 
             // labelControl8
             // 
@@ -250,16 +253,16 @@
             this.labelControl8.TabIndex = 57;
             this.labelControl8.Text = "Phí BH :";
             // 
-            // textEdit4
+            // txtPhiBH
             // 
-            this.textEdit4.EditValue = "";
-            this.textEdit4.Location = new System.Drawing.Point(932, 11);
-            this.textEdit4.Name = "textEdit4";
-            this.textEdit4.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
-            this.textEdit4.Properties.Appearance.Options.UseFont = true;
-            this.textEdit4.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.textEdit4.Size = new System.Drawing.Size(186, 30);
-            this.textEdit4.TabIndex = 56;
+            this.txtPhiBH.EditValue = "";
+            this.txtPhiBH.Location = new System.Drawing.Point(932, 11);
+            this.txtPhiBH.Name = "txtPhiBH";
+            this.txtPhiBH.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
+            this.txtPhiBH.Properties.Appearance.Options.UseFont = true;
+            this.txtPhiBH.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            this.txtPhiBH.Size = new System.Drawing.Size(186, 30);
+            this.txtPhiBH.TabIndex = 56;
             // 
             // labelControl7
             // 
@@ -301,16 +304,16 @@
             this.buttonEdit1.Size = new System.Drawing.Size(29, 17);
             this.buttonEdit1.TabIndex = 49;
             // 
-            // textEdit2
+            // txtDichVu
             // 
-            this.textEdit2.EditValue = "";
-            this.textEdit2.Location = new System.Drawing.Point(567, 49);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
-            this.textEdit2.Properties.Appearance.Options.UseFont = true;
-            this.textEdit2.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.textEdit2.Size = new System.Drawing.Size(280, 30);
-            this.textEdit2.TabIndex = 48;
+            this.txtDichVu.EditValue = "";
+            this.txtDichVu.Location = new System.Drawing.Point(567, 49);
+            this.txtDichVu.Name = "txtDichVu";
+            this.txtDichVu.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
+            this.txtDichVu.Properties.Appearance.Options.UseFont = true;
+            this.txtDichVu.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            this.txtDichVu.Size = new System.Drawing.Size(280, 30);
+            this.txtDichVu.TabIndex = 48;
             // 
             // panelControl3
             // 
@@ -337,7 +340,7 @@
             // 
             this.groupControl1.Controls.Add(this.labelControl11);
             this.groupControl1.Controls.Add(this.textEdit6);
-            this.groupControl1.Controls.Add(this.buttonEdit3);
+            this.groupControl1.Controls.Add(this.btnSeachKH);
             this.groupControl1.Controls.Add(this.labelControl5);
             this.groupControl1.Controls.Add(this.textEdit1);
             this.groupControl1.Controls.Add(this.labelControl1);
@@ -354,16 +357,17 @@
             this.groupControl1.TabIndex = 44;
             this.groupControl1.Text = "Thông tin";
             // 
-            // buttonEdit3
+            // btnSeachKH
             // 
-            this.buttonEdit3.Location = new System.Drawing.Point(345, 35);
-            this.buttonEdit3.Name = "buttonEdit3";
-            this.buttonEdit3.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.btnSeachKH.Location = new System.Drawing.Point(345, 35);
+            this.btnSeachKH.Name = "btnSeachKH";
+            this.btnSeachKH.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.buttonEdit3.Properties.ButtonsStyle = DevExpress.XtraEditors.Controls.BorderStyles.Flat;
-            this.buttonEdit3.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
-            this.buttonEdit3.Size = new System.Drawing.Size(29, 17);
-            this.buttonEdit3.TabIndex = 51;
+            this.btnSeachKH.Properties.ButtonsStyle = DevExpress.XtraEditors.Controls.BorderStyles.Flat;
+            this.btnSeachKH.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
+            this.btnSeachKH.Size = new System.Drawing.Size(29, 17);
+            this.btnSeachKH.TabIndex = 51;
+            this.btnSeachKH.Click += new System.EventHandler(this.btnSeachKH_Click);
             // 
             // labelControl5
             // 
@@ -383,6 +387,7 @@
             this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
             this.textEdit1.Properties.Appearance.Options.UseFont = true;
             this.textEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            this.textEdit1.Properties.ReadOnly = true;
             this.textEdit1.Size = new System.Drawing.Size(213, 30);
             this.textEdit1.TabIndex = 27;
             // 
@@ -406,6 +411,8 @@
             this.txt_phone.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.txt_phone.Size = new System.Drawing.Size(213, 30);
             this.txt_phone.TabIndex = 21;
+            this.txt_phone.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_phone_KeyDown);
+            this.txt_phone.Leave += new System.EventHandler(this.txt_phone_Leave);
             // 
             // lblPhone
             // 
@@ -439,6 +446,7 @@
             this.txtMakh.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.txtMakh.Properties.Mask.EditMask = "n0";
             this.txtMakh.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.txtMakh.Properties.ReadOnly = true;
             this.txtMakh.Size = new System.Drawing.Size(213, 30);
             this.txtMakh.TabIndex = 26;
             // 
@@ -452,18 +460,18 @@
             this.labelControl3.TabIndex = 26;
             this.labelControl3.Text = "Model phụ kiện :";
             // 
-            // textEdit3
+            // txtNoiDung
             // 
-            this.textEdit3.EditValue = "";
-            this.textEdit3.Location = new System.Drawing.Point(567, 85);
-            this.textEdit3.Name = "textEdit3";
-            this.textEdit3.Properties.Appearance.BackColor = System.Drawing.Color.White;
-            this.textEdit3.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
-            this.textEdit3.Properties.Appearance.Options.UseBackColor = true;
-            this.textEdit3.Properties.Appearance.Options.UseFont = true;
-            this.textEdit3.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.textEdit3.Size = new System.Drawing.Size(280, 62);
-            this.textEdit3.TabIndex = 53;
+            this.txtNoiDung.EditValue = "";
+            this.txtNoiDung.Location = new System.Drawing.Point(567, 85);
+            this.txtNoiDung.Name = "txtNoiDung";
+            this.txtNoiDung.Properties.Appearance.BackColor = System.Drawing.Color.White;
+            this.txtNoiDung.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
+            this.txtNoiDung.Properties.Appearance.Options.UseBackColor = true;
+            this.txtNoiDung.Properties.Appearance.Options.UseFont = true;
+            this.txtNoiDung.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            this.txtNoiDung.Size = new System.Drawing.Size(280, 62);
+            this.txtNoiDung.TabIndex = 53;
             // 
             // panelControl2
             // 
@@ -627,6 +635,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton()});
             this.btnInBill.ContextImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnInBill.ContextImageOptions.Image")));
             this.btnInBill.Name = "btnInBill";
+            this.btnInBill.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.btnInBill_ButtonClick);
             // 
             // gridView1
             // 
@@ -655,6 +664,7 @@
             this.textEdit6.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.textEdit6.Properties.Mask.EditMask = "n0";
             this.textEdit6.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.textEdit6.Properties.ReadOnly = true;
             this.textEdit6.Size = new System.Drawing.Size(213, 30);
             this.textEdit6.TabIndex = 52;
             // 
@@ -667,26 +677,26 @@
             this.Controls.Add(this.panelControl2);
             this.Name = "frm_TaoDonBaoHanh";
             this.Text = "Tạo đơn bảo hành";
-            ((System.ComponentModel.ISupportInitialize)(this.txtDiaChi.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtModelPK.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtHoVaTen.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             this.panelControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPhiKhac.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPhiBH.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.buttonEdit2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.buttonEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDichVu.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).EndInit();
             this.panelControl3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.buttonEdit3.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSeachKH.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_phone.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMakh.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNoiDung.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
             this.panelControl2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).EndInit();
@@ -709,7 +719,7 @@
         private DevExpress.XtraEditors.SimpleButton btn_InBill;
         private DevExpress.XtraEditors.SimpleButton btn_HoanTat;
         private DevExpress.XtraEditors.SimpleButton btn_Clear;
-        private DevExpress.XtraEditors.TextEdit txtDiaChi;
+        private DevExpress.XtraEditors.TextEdit txtModelPK;
         private DevExpress.XtraEditors.TextEdit txtHoVaTen;
         private DevExpress.XtraEditors.PanelControl panelControl1;
         private DevExpress.XtraEditors.GroupControl groupControl1;
@@ -726,16 +736,16 @@
         private DevExpress.XtraEditors.LabelControl labelControl4;
         private DevExpress.XtraEditors.ButtonEdit buttonEdit2;
         private DevExpress.XtraEditors.ButtonEdit buttonEdit1;
-        private DevExpress.XtraEditors.TextEdit textEdit2;
+        private DevExpress.XtraEditors.TextEdit txtDichVu;
         private DevExpress.XtraEditors.LabelControl labelControl6;
-        private DevExpress.XtraEditors.LabelControl labelControl10;
+        private DevExpress.XtraEditors.LabelControl txtThoiGianBH;
         private DevExpress.XtraEditors.LabelControl labelControl9;
-        private DevExpress.XtraEditors.TextEdit textEdit5;
+        private DevExpress.XtraEditors.TextEdit txtPhiKhac;
         private DevExpress.XtraEditors.LabelControl labelControl8;
-        private DevExpress.XtraEditors.TextEdit textEdit4;
+        private DevExpress.XtraEditors.TextEdit txtPhiBH;
         private DevExpress.XtraEditors.LabelControl labelControl7;
-        private DevExpress.XtraEditors.ButtonEdit buttonEdit3;
-        private DevExpress.XtraEditors.MemoEdit textEdit3;
+        private DevExpress.XtraEditors.ButtonEdit btnSeachKH;
+        private DevExpress.XtraEditors.MemoEdit txtNoiDung;
         private DevExpress.XtraEditors.PanelControl panelControl4;
         private DevExpress.XtraEditors.PanelControl panelControl5;
         private DevExpress.XtraEditors.PanelControl panelControl6;
