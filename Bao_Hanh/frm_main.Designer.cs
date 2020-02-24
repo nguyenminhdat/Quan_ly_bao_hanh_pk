@@ -39,6 +39,7 @@
             this.btn_taoDonBH = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btnTimDonBH = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btnQuanLyChucDanh = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.btn_QlyThietBi = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement4 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement6 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.acc_QuanTri = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -68,7 +69,6 @@
             this.barButtonGroup1 = new DevExpress.XtraBars.BarButtonGroup();
             this.div_container = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormContainer();
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.btn_QlyThietBi = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             ((System.ComponentModel.ISupportInitialize)(this.pnl_qlbaohanh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).BeginInit();
@@ -87,7 +87,7 @@
             this.pnl_qlbaohanh.Name = "pnl_qlbaohanh";
             this.pnl_qlbaohanh.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.AutoCollapse;
             this.pnl_qlbaohanh.ShowFilterControl = DevExpress.XtraBars.Navigation.ShowFilterControl.Auto;
-            this.pnl_qlbaohanh.Size = new System.Drawing.Size(154, 492);
+            this.pnl_qlbaohanh.Size = new System.Drawing.Size(256, 492);
             this.pnl_qlbaohanh.TabIndex = 1;
             this.pnl_qlbaohanh.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
             this.pnl_qlbaohanh.Visible = false;
@@ -166,6 +166,13 @@
             this.btnQuanLyChucDanh.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnQuanLyChucDanh.Text = "Quản lý chức danh";
             this.btnQuanLyChucDanh.Click += new System.EventHandler(this.btnQuanLyChucDanh_Click);
+            // 
+            // btn_QlyThietBi
+            // 
+            this.btn_QlyThietBi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_QlyThietBi.ImageOptions.Image")));
+            this.btn_QlyThietBi.Name = "btn_QlyThietBi";
+            this.btn_QlyThietBi.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.btn_QlyThietBi.Text = "Quản lý thiết bị";
             // 
             // accordionControlElement4
             // 
@@ -380,10 +387,10 @@
             // 
             this.div_container.Controls.Add(this.ribbonControl1);
             this.div_container.Dock = System.Windows.Forms.DockStyle.Top;
-            this.div_container.Location = new System.Drawing.Point(154, 27);
+            this.div_container.Location = new System.Drawing.Point(256, 27);
             this.div_container.Margin = new System.Windows.Forms.Padding(2);
             this.div_container.Name = "div_container";
-            this.div_container.Size = new System.Drawing.Size(826, 77);
+            this.div_container.Size = new System.Drawing.Size(724, 77);
             this.div_container.TabIndex = 0;
             // 
             // ribbonControl1
@@ -406,14 +413,8 @@
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.he_thong,
             this.help});
-            this.ribbonControl1.Size = new System.Drawing.Size(809, 116);
+            this.ribbonControl1.Size = new System.Drawing.Size(707, 116);
             this.ribbonControl1.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
-            // 
-            // btn_QlyThietBi
-            // 
-            this.btn_QlyThietBi.Name = "btn_QlyThietBi";
-            this.btn_QlyThietBi.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.btn_QlyThietBi.Text = "Element5";
             // 
             // Main
             // 

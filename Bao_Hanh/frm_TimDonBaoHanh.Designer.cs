@@ -37,32 +37,35 @@
             this.txtPhone = new DevExpress.XtraEditors.TextEdit();
             this.txtMaKH = new DevExpress.XtraEditors.TextEdit();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.gc_Data = new DevExpress.XtraGrid.GridControl();
             this.gv_Data = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.btnInBillBH = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
-            this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.btnInBillBH = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
+            this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
+            this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtPhone.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMaKH.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gc_Data)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gv_Data)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gc_Data)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gv_Data)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnInBillBH)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
             this.panelControl3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnInBillBH)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
+            this.panelControl4.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupControl1
@@ -74,10 +77,10 @@
             this.groupControl1.Controls.Add(this.labelControl1);
             this.groupControl1.Controls.Add(this.txtPhone);
             this.groupControl1.Controls.Add(this.txtMaKH);
-            this.groupControl1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupControl1.Location = new System.Drawing.Point(0, 0);
+            this.groupControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupControl1.Location = new System.Drawing.Point(2, 2);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(832, 100);
+            this.groupControl1.Size = new System.Drawing.Size(824, 117);
             this.groupControl1.TabIndex = 21;
             this.groupControl1.Text = "groupControl1";
             // 
@@ -165,6 +168,16 @@
             this.panelControl1.Size = new System.Drawing.Size(832, 428);
             this.panelControl1.TabIndex = 22;
             // 
+            // panelControl2
+            // 
+            this.panelControl2.Controls.Add(this.panelControl4);
+            this.panelControl2.Controls.Add(this.panelControl3);
+            this.panelControl2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelControl2.Location = new System.Drawing.Point(0, 0);
+            this.panelControl2.Name = "panelControl2";
+            this.panelControl2.Size = new System.Drawing.Size(832, 428);
+            this.panelControl2.TabIndex = 1;
+            // 
             // gc_Data
             // 
             this.gc_Data.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -173,7 +186,7 @@
             this.gc_Data.Name = "gc_Data";
             this.gc_Data.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.btnInBillBH});
-            this.gc_Data.Size = new System.Drawing.Size(824, 316);
+            this.gc_Data.Size = new System.Drawing.Size(813, 292);
             this.gc_Data.TabIndex = 0;
             this.gc_Data.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gv_Data});
@@ -202,6 +215,24 @@
             this.gv_Data.GridControl = this.gc_Data;
             this.gv_Data.Name = "gv_Data";
             this.gv_Data.OptionsCustomization.AllowGroup = false;
+            this.gv_Data.OptionsView.ShowGroupPanel = false;
+            // 
+            // gridColumn8
+            // 
+            this.gridColumn8.Caption = "InBill";
+            this.gridColumn8.ColumnEdit = this.btnInBillBH;
+            this.gridColumn8.Name = "gridColumn8";
+            this.gridColumn8.Visible = true;
+            this.gridColumn8.VisibleIndex = 0;
+            // 
+            // btnInBillBH
+            // 
+            this.btnInBillBH.AutoHeight = false;
+            this.btnInBillBH.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.btnInBillBH.ContextImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnInBillBH.ContextImageOptions.Image")));
+            this.btnInBillBH.Name = "btnInBillBH";
+            this.btnInBillBH.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             // 
             // gridColumn2
             // 
@@ -220,24 +251,6 @@
             this.gridColumn6.Visible = true;
             this.gridColumn6.VisibleIndex = 2;
             this.gridColumn6.Width = 119;
-            // 
-            // panelControl2
-            // 
-            this.panelControl2.Controls.Add(this.panelControl3);
-            this.panelControl2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelControl2.Location = new System.Drawing.Point(0, 0);
-            this.panelControl2.Name = "panelControl2";
-            this.panelControl2.Size = new System.Drawing.Size(832, 428);
-            this.panelControl2.TabIndex = 1;
-            // 
-            // panelControl3
-            // 
-            this.panelControl3.Controls.Add(this.gc_Data);
-            this.panelControl3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelControl3.Location = new System.Drawing.Point(2, 106);
-            this.panelControl3.Name = "panelControl3";
-            this.panelControl3.Size = new System.Drawing.Size(828, 320);
-            this.panelControl3.TabIndex = 1;
             // 
             // gridColumn1
             // 
@@ -279,29 +292,28 @@
             this.gridColumn7.VisibleIndex = 7;
             this.gridColumn7.Width = 26;
             // 
-            // gridColumn8
+            // panelControl3
             // 
-            this.gridColumn8.Caption = "InBill";
-            this.gridColumn8.ColumnEdit = this.btnInBillBH;
-            this.gridColumn8.Name = "gridColumn8";
-            this.gridColumn8.Visible = true;
-            this.gridColumn8.VisibleIndex = 0;
+            this.panelControl3.Controls.Add(this.groupControl1);
+            this.panelControl3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelControl3.Location = new System.Drawing.Point(2, 2);
+            this.panelControl3.Name = "panelControl3";
+            this.panelControl3.Size = new System.Drawing.Size(828, 121);
+            this.panelControl3.TabIndex = 22;
             // 
-            // btnInBillBH
+            // panelControl4
             // 
-            this.btnInBillBH.AutoHeight = false;
-            this.btnInBillBH.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.btnInBillBH.ContextImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnInBillBH.ContextImageOptions.Image")));
-            this.btnInBillBH.Name = "btnInBillBH";
-            this.btnInBillBH.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.panelControl4.Controls.Add(this.gc_Data);
+            this.panelControl4.Location = new System.Drawing.Point(3, 127);
+            this.panelControl4.Name = "panelControl4";
+            this.panelControl4.Size = new System.Drawing.Size(817, 296);
+            this.panelControl4.TabIndex = 23;
             // 
             // frm_TimDonBaoHanh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(832, 428);
-            this.Controls.Add(this.groupControl1);
             this.Controls.Add(this.panelControl1);
             this.Name = "frm_TimDonBaoHanh";
             this.Text = "Tìm đơn bảo hành";
@@ -312,13 +324,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtMaKH.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gc_Data)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gv_Data)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
             this.panelControl2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gc_Data)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gv_Data)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnInBillBH)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).EndInit();
             this.panelControl3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.btnInBillBH)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).EndInit();
+            this.panelControl4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -338,7 +352,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
         private DevExpress.XtraEditors.PanelControl panelControl2;
-        private DevExpress.XtraEditors.PanelControl panelControl3;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
@@ -346,5 +359,7 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn8;
         private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit btnInBillBH;
+        private DevExpress.XtraEditors.PanelControl panelControl4;
+        private DevExpress.XtraEditors.PanelControl panelControl3;
     }
 }

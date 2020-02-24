@@ -189,6 +189,7 @@
             this.gv_Data.GridControl = this.gc_Data;
             this.gv_Data.Name = "gv_Data";
             this.gv_Data.OptionsCustomization.AllowGroup = false;
+            this.gv_Data.OptionsView.ShowGroupPanel = false;
             // 
             // gridColumn1
             // 

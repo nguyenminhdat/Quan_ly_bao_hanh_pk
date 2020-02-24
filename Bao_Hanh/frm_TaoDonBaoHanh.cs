@@ -67,7 +67,7 @@ namespace Bao_Hanh
                     if (dt.Rows.Count > 0)
                     {
                         txtHoVaTen.Text = dt.Rows[0]["TenKhachHang"].ToString();
-                        txtModelPK.Text = dt.Rows[0]["DiaChi"].ToString();
+                        txtDiaChi.Text = dt.Rows[0]["DiaChi"].ToString();
                         txtMakh.Text = dt.Rows[0]["MaKH"].ToString();
 
                         Util.f_Notify("Tìm kiếm khách hàng thành công", true);
@@ -125,8 +125,8 @@ namespace Bao_Hanh
         #endregion Clas
 
         private void f_PrintBill()
-        { 
-            
+        {
+
         }
 
         private void btnInBill_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
@@ -139,7 +139,7 @@ namespace Bao_Hanh
         {
             if (txt_phone.Text == "" || txtModelPK.Text == "" || txtDichVu.Text == "" || txtNoiDung.Text == "")
             {
-                Util.f_Notify("Chưa đủ thông tin !!!",false);
+                Util.f_Notify("Chưa đủ thông tin !!!", false);
                 return false;
             }
             return true;
@@ -154,7 +154,7 @@ namespace Bao_Hanh
                 int themmoi = 0;//Util.RunSql(sql_themmoi);
                 if (themmoi > 0)
                 {
-                    Util.f_Notify("Hoàn tất bảo hành thành công !",true);
+                    Util.f_Notify("Hoàn tất bảo hành thành công !", true);
                     f_PrintBill();
                 }
                 else
@@ -169,7 +169,24 @@ namespace Bao_Hanh
         {
             if (e.KeyCode == Keys.Enter || e.KeyCode == Keys.Tab)
             {
-                
+
             }
         }
+
+
+
+        //POS020 l_Form_POS020 = new POS020();
+        //l_Form_POS020.f_FormShow_FromPOS001(this
+
+        //                                    , l_dt
+
+        //                                    , l_dt.Rows[0]["ItemCode"].ToString()
+
+        //                                    , l_dt.Rows[0]["ItemName"].ToString()
+
+        //                                    , 1);
+
+    }
+
+
 }
