@@ -56,10 +56,14 @@ namespace Bao_Hanh
                                      strMaKh, strSDT
                                      );
                         dt = Util.GetData(sql_timkiem);
-                        if (dt != null)
+                        if (dt.Rows.Count > 0)
                         {
                             gc_Data.DataSource = dt;
                             Util.f_Notify("Tìm kiếm khách hàng thành công", true);
+                        }
+                        else
+                        {
+                            Util.f_Notify("Chưa có danh sách khách hàng",true);
                         }
                     }
                     else

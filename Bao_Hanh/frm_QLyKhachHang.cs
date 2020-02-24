@@ -71,7 +71,7 @@ namespace Bao_Hanh
             }
         }
         //Save Thông tin khách hàng
-        private void f_save(string strMaKh, string strHoten, string strGioiTinh, string strSDT, string strDiaChi, string strNgaySinh)
+        private void f_save(string strMaKh, string strHoten, string strGioiTinh, string strSDT, string strDiaChi, DateTime strNgaySinh)
         {
             try
             {
@@ -84,7 +84,7 @@ namespace Bao_Hanh
                         if (!f_validate_save()) { return; }
                         else
                         {
-                            string sql_capnhat = string.Format("update tbl_KhachHang set TenKhachHang = N'{1}', GioiTinh = N'{2}', NgaySinh = CONVERT(DATE,'{3}'), DiaChi = N'{4}', SDT = {5} where MaKH = '{0}'",
+                            string sql_capnhat = string.Format("update tbl_KhachHang set TenKhachHang = N'{1}', GioiTinh = N'{2}', NgaySinh = CONVERT(DATE,'{3}'), DiaChi = N'{4}', SDT = '{5}' where MaKH = '{0}'",
                                 strMaKh, strHoten, strGioiTinh, strNgaySinh, strDiaChi, strSDT
                                 );
                             int capnhat = Util.RunSql(sql_capnhat);
@@ -103,7 +103,7 @@ namespace Bao_Hanh
                 else //Thêm mới 
                 {
                     f_validate_save();
-                    string sql_themmoi = string.Format("INSERT INTO tbl_KhachHang(MaKH,TenKhachHang, GioiTinh, NgaySinh, DiaChi, SDT) VALUES ('{0}',N'{1}',{2},'{3}',{4})",
+                    string sql_themmoi = string.Format("INSERT INTO tbl_KhachHang(MaKH,TenKhachHang, GioiTinh, NgaySinh, DiaChi, SDT) VALUES ('{0}',N'{1}',N'{2}',CONVERT(DATE,'{3}'),N'{4}','{5}')",
                            strMaKh, strHoten, strGioiTinh, strNgaySinh, strDiaChi, strSDT
                            );
                     int themmoi = Util.RunSql(sql_themmoi);
@@ -170,19 +170,20 @@ namespace Bao_Hanh
                 }
                 else
                 {
+
                     DataTable dt = new DataTable();
                     string sql_timkiem = string.Format("Select MaKH,TenKhachHang, GioiTinh, NgaySinh, DiaChi, SDT FROM dbo.tbl_KhachHang Where  MaKH = '{0}' OR TenKhachHang LIKE '%'{1}'%' OR SDT = '{2}'",
                                  strMaKh, strHoten, strSDT
                                  );
                     dt = Util.GetData(sql_timkiem);
-                    if (dt != null)
+                    if (dt.Rows.Count > 0)
                     {
                         gc_Data.DataSource = dt;
                         Util.f_Notify("Tìm kiếm khách hàng thành công", true);
                     }
                     else
                     {
-                        Util.f_Notify("Tìm kiếm khách hàng thất bại", false);
+                        Util.f_Notify("Khách hàng không tồn tại", false);
                     }
                 }
             }
@@ -225,8 +226,8 @@ namespace Bao_Hanh
             string strTen = txtHoVaTen.Text.Trim();
             string strPhone = txtPhone.Text.Trim();
             string strDiaChi = txtDiaChi.Text.Trim();
-            string strGioiTinh = cbo_GioiTinh.SelectedText.Trim();
-            string strNgaySinh = cboNgaySinh.EditValue.ToString();
+            string strGioiTinh = cbo_GioiTinh.Text.Trim();
+            DateTime strNgaySinh = Convert.ToDateTime(cboNgaySinh.EditValue);
 
             f_save(strMaKH, strTen, strGioiTinh, strPhone, strDiaChi, strNgaySinh);
         }

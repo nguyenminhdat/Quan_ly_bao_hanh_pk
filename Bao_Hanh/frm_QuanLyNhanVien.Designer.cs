@@ -29,11 +29,13 @@
         private void InitializeComponent()
         {
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.cbb_ChucDanh = new System.Windows.Forms.ComboBox();
             this.cbb_GioiTinh = new DevExpress.XtraEditors.ComboBoxEdit();
             this.dtp_NgaySinh = new DevExpress.XtraEditors.DateEdit();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
@@ -59,8 +61,6 @@
             this.cDiaChi = new DevExpress.XtraGrid.Columns.GridColumn();
             this.cMaChucDanh = new DevExpress.XtraGrid.Columns.GridColumn();
             this.rep_GioiTinh = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
-            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.cbb_ChucDanh = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cbb_GioiTinh.Properties)).BeginInit();
@@ -105,8 +105,16 @@
             this.panelControl1.Location = new System.Drawing.Point(0, 0);
             this.panelControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(1031, 212);
+            this.panelControl1.Size = new System.Drawing.Size(1031, 136);
             this.panelControl1.TabIndex = 0;
+            // 
+            // cbb_ChucDanh
+            // 
+            this.cbb_ChucDanh.FormattingEnabled = true;
+            this.cbb_ChucDanh.Location = new System.Drawing.Point(858, 23);
+            this.cbb_ChucDanh.Name = "cbb_ChucDanh";
+            this.cbb_ChucDanh.Size = new System.Drawing.Size(140, 21);
+            this.cbb_ChucDanh.TabIndex = 48;
             // 
             // cbb_GioiTinh
             // 
@@ -167,6 +175,16 @@
             this.labelControl3.Size = new System.Drawing.Size(41, 17);
             this.labelControl3.TabIndex = 44;
             this.labelControl3.Text = "Họ tên";
+            // 
+            // labelControl4
+            // 
+            this.labelControl4.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl4.Appearance.Options.UseFont = true;
+            this.labelControl4.Location = new System.Drawing.Point(783, 23);
+            this.labelControl4.Name = "labelControl4";
+            this.labelControl4.Size = new System.Drawing.Size(68, 17);
+            this.labelControl4.TabIndex = 44;
+            this.labelControl4.Text = "Chức danh";
             // 
             // labelControl5
             // 
@@ -327,10 +345,10 @@
             // 
             this.panelControl2.Controls.Add(this.gc_Data);
             this.panelControl2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelControl2.Location = new System.Drawing.Point(0, 212);
+            this.panelControl2.Location = new System.Drawing.Point(0, 136);
             this.panelControl2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelControl2.Name = "panelControl2";
-            this.panelControl2.Size = new System.Drawing.Size(1031, 355);
+            this.panelControl2.Size = new System.Drawing.Size(1031, 431);
             this.panelControl2.TabIndex = 1;
             // 
             // gc_Data
@@ -342,7 +360,7 @@
             this.gc_Data.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.rep_GioiTinh,
             this.rep_NgaySinh});
-            this.gc_Data.Size = new System.Drawing.Size(1027, 351);
+            this.gc_Data.Size = new System.Drawing.Size(1027, 427);
             this.gc_Data.TabIndex = 1;
             this.gc_Data.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gv_Data});
@@ -468,24 +486,6 @@
             // 
             this.rep_GioiTinh.AutoHeight = false;
             this.rep_GioiTinh.Name = "rep_GioiTinh";
-            // 
-            // labelControl4
-            // 
-            this.labelControl4.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl4.Appearance.Options.UseFont = true;
-            this.labelControl4.Location = new System.Drawing.Point(783, 23);
-            this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(68, 17);
-            this.labelControl4.TabIndex = 44;
-            this.labelControl4.Text = "Chức danh";
-            // 
-            // cbb_ChucDanh
-            // 
-            this.cbb_ChucDanh.FormattingEnabled = true;
-            this.cbb_ChucDanh.Location = new System.Drawing.Point(858, 23);
-            this.cbb_ChucDanh.Name = "cbb_ChucDanh";
-            this.cbb_ChucDanh.Size = new System.Drawing.Size(140, 21);
-            this.cbb_ChucDanh.TabIndex = 48;
             // 
             // frm_QuanLyNhanVien
             // 

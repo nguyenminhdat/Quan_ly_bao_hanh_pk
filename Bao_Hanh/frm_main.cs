@@ -131,7 +131,6 @@ namespace Bao_Hanh
                 Application.Exit();
             }
         }
-
         private void Main_Load(object sender, EventArgs e)
         {
             frm_login frm = new frm_login();
@@ -173,6 +172,17 @@ namespace Bao_Hanh
         {
             frm_TaoDonBaoHanh frm = new frm_TaoDonBaoHanh();
             MoForm(frm);
+        }
+
+        private void btn_danhsachBH_Click(object sender, EventArgs e)
+        {
+            frm_QuanLyDichVu frm = new frm_QuanLyDichVu();
+            MoForm(frm);
+        }
+
+        private void btnTimDonBH_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -37,7 +37,8 @@
             this.btn_timKiemKH = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btn_danhsachBH = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btn_taoDonBH = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement5 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.btnTimDonBH = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.btnQuanLyChucDanh = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement4 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement6 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.acc_QuanTri = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -67,7 +68,6 @@
             this.barButtonGroup1 = new DevExpress.XtraBars.BarButtonGroup();
             this.div_container = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormContainer();
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.btnQuanLyChucDanh = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             ((System.ComponentModel.ISupportInitialize)(this.pnl_qlbaohanh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).BeginInit();
@@ -86,7 +86,7 @@
             this.pnl_qlbaohanh.Name = "pnl_qlbaohanh";
             this.pnl_qlbaohanh.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.AutoCollapse;
             this.pnl_qlbaohanh.ShowFilterControl = DevExpress.XtraBars.Navigation.ShowFilterControl.Auto;
-            this.pnl_qlbaohanh.Size = new System.Drawing.Size(241, 492);
+            this.pnl_qlbaohanh.Size = new System.Drawing.Size(154, 492);
             this.pnl_qlbaohanh.TabIndex = 1;
             this.pnl_qlbaohanh.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
             this.pnl_qlbaohanh.Visible = false;
@@ -110,7 +110,7 @@
             this.btn_timKiemKH,
             this.btn_danhsachBH,
             this.btn_taoDonBH,
-            this.accordionControlElement5,
+            this.btnTimDonBH,
             this.btnQuanLyChucDanh});
             this.accordionControlElement3.Expanded = true;
             this.accordionControlElement3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement3.ImageOptions.Image")));
@@ -139,6 +139,7 @@
             this.btn_danhsachBH.Name = "btn_danhsachBH";
             this.btn_danhsachBH.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btn_danhsachBH.Text = "Dịch vụ Kiểm tra/bảo hành";
+            this.btn_danhsachBH.Click += new System.EventHandler(this.btn_danhsachBH_Click);
             // 
             // btn_taoDonBH
             // 
@@ -148,12 +149,20 @@
             this.btn_taoDonBH.Text = "Tạo đơn bảo hành";
             this.btn_taoDonBH.Click += new System.EventHandler(this.btn_taoDonBH_Click);
             // 
-            // accordionControlElement5
+            // btnTimDonBH
             // 
-            this.accordionControlElement5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement5.ImageOptions.Image")));
-            this.accordionControlElement5.Name = "accordionControlElement5";
-            this.accordionControlElement5.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement5.Text = "Tìm đơn bảo hành";
+            this.btnTimDonBH.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement5.ImageOptions.Image")));
+            this.btnTimDonBH.Name = "btnTimDonBH";
+            this.btnTimDonBH.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.btnTimDonBH.Text = "Tìm đơn bảo hành";
+            this.btnTimDonBH.Click += new System.EventHandler(this.btnTimDonBH_Click);
+            // 
+            // btnQuanLyChucDanh
+            // 
+            this.btnQuanLyChucDanh.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnQuanLyChucDanh.ImageOptions.Image")));
+            this.btnQuanLyChucDanh.Name = "btnQuanLyChucDanh";
+            this.btnQuanLyChucDanh.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.btnQuanLyChucDanh.Text = "Quản lý chức danh";
             // 
             // accordionControlElement4
             // 
@@ -368,10 +377,10 @@
             // 
             this.div_container.Controls.Add(this.ribbonControl1);
             this.div_container.Dock = System.Windows.Forms.DockStyle.Top;
-            this.div_container.Location = new System.Drawing.Point(241, 27);
+            this.div_container.Location = new System.Drawing.Point(154, 27);
             this.div_container.Margin = new System.Windows.Forms.Padding(2);
             this.div_container.Name = "div_container";
-            this.div_container.Size = new System.Drawing.Size(739, 120);
+            this.div_container.Size = new System.Drawing.Size(826, 77);
             this.div_container.TabIndex = 0;
             // 
             // ribbonControl1
@@ -394,15 +403,8 @@
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.he_thong,
             this.help});
-            this.ribbonControl1.Size = new System.Drawing.Size(739, 116);
+            this.ribbonControl1.Size = new System.Drawing.Size(809, 116);
             this.ribbonControl1.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
-            // 
-            // btnQuanLyChucDanh
-            // 
-            this.btnQuanLyChucDanh.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnQuanLyChucDanh.ImageOptions.Image")));
-            this.btnQuanLyChucDanh.Name = "btnQuanLyChucDanh";
-            this.btnQuanLyChucDanh.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.btnQuanLyChucDanh.Text = "Quản lý chức danh";
             // 
             // Main
             // 
@@ -449,7 +451,7 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement btn_timKiemKH;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btn_danhsachBH;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btn_taoDonBH;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement5;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement btnTimDonBH;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement4;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement6;
         private DevExpress.XtraTabbedMdi.XtraTabbedMdiManager xtraTabbedMdiManager2;

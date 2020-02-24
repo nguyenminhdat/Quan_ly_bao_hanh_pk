@@ -99,7 +99,8 @@ namespace Bao_Hanh
                 double giadv = Convert.ToDouble(txtGiaDV.Text);
                 int thoigianbh = Convert.ToInt32(cboThoiGianBaoHanh.Text);
                 bool tinhtrang = chkTinhTrang.Checked;
-                if (!KiemTraKhiLuu(madv,tendv,giadv.ToString(),thoigianbh.ToString()))
+
+                if (KiemTraKhiLuu(madv,tendv,giadv.ToString(),thoigianbh.ToString()))
                 {
                     //Nếu tồn tại thì thông báo cập nhật thông tin
                     if (KiemTraTonTai(madv))
