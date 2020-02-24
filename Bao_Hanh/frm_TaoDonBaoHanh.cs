@@ -34,7 +34,7 @@ namespace Bao_Hanh
                         if (dt.Rows.Count > 0)
                         {
                             txtHoVaTen.Text = dt.Rows[0]["TenKhachHang"].ToString();
-                            txtModelPK.Text = dt.Rows[0]["DiaChi"].ToString();
+                            txtDiaChi.Text = dt.Rows[0]["DiaChi"].ToString();
                             txtMakh.Text = dt.Rows[0]["MaKH"].ToString();
 
                             Util.f_Notify("Tìm kiếm khách hàng thành công", true);
@@ -93,7 +93,7 @@ namespace Bao_Hanh
             txtModelPK.Text = "";
             txtNoiDung.Text = "";
             txtPhiBH.Text = "";
-            txtPhiKhac.Text = "";
+            txtTrangThai.Text = "";
             txtThoiGianBH.Text = "";
         }
 
@@ -164,5 +164,12 @@ namespace Bao_Hanh
                 }
             }
         }
-    }
+
+        private void txtModelPK_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter || e.KeyCode == Keys.Tab)
+            {
+                
+            }
+        }
 }

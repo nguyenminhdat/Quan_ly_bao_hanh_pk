@@ -68,6 +68,7 @@
             this.barButtonGroup1 = new DevExpress.XtraBars.BarButtonGroup();
             this.div_container = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormContainer();
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
+            this.btn_QlyThietBi = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             ((System.ComponentModel.ISupportInitialize)(this.pnl_qlbaohanh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).BeginInit();
@@ -111,7 +112,8 @@
             this.btn_danhsachBH,
             this.btn_taoDonBH,
             this.btnTimDonBH,
-            this.btnQuanLyChucDanh});
+            this.btnQuanLyChucDanh,
+            this.btn_QlyThietBi});
             this.accordionControlElement3.Expanded = true;
             this.accordionControlElement3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement3.ImageOptions.Image")));
             this.accordionControlElement3.Name = "accordionControlElement3";
@@ -151,7 +153,7 @@
             // 
             // btnTimDonBH
             // 
-            this.btnTimDonBH.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement5.ImageOptions.Image")));
+            this.btnTimDonBH.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTimDonBH.ImageOptions.Image")));
             this.btnTimDonBH.Name = "btnTimDonBH";
             this.btnTimDonBH.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnTimDonBH.Text = "Tìm đơn bảo hành";
@@ -163,6 +165,7 @@
             this.btnQuanLyChucDanh.Name = "btnQuanLyChucDanh";
             this.btnQuanLyChucDanh.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnQuanLyChucDanh.Text = "Quản lý chức danh";
+            this.btnQuanLyChucDanh.Click += new System.EventHandler(this.btnQuanLyChucDanh_Click);
             // 
             // accordionControlElement4
             // 
@@ -406,6 +409,12 @@
             this.ribbonControl1.Size = new System.Drawing.Size(809, 116);
             this.ribbonControl1.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
             // 
+            // btn_QlyThietBi
+            // 
+            this.btn_QlyThietBi.Name = "btn_QlyThietBi";
+            this.btn_QlyThietBi.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.btn_QlyThietBi.Text = "Element5";
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -474,6 +483,7 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement acc_QuanTri;
         private DevExpress.XtraBars.Navigation.AccordionControlElement bar_QuanLyNhanVien;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnQuanLyChucDanh;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement btn_QlyThietBi;
     }
 }
 

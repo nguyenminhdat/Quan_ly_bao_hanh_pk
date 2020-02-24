@@ -182,7 +182,14 @@ namespace Bao_Hanh
 
         private void btnTimDonBH_Click(object sender, EventArgs e)
         {
+            frm_TimDonBaoHanh frm = new frm_TimDonBaoHanh();
+            MoForm(frm);
+        }
 
+        private void btnQuanLyChucDanh_Click(object sender, EventArgs e)
+        {
+            frm_QuanLyChucDanh frm = new frm_QuanLyChucDanh();
+            MoForm(frm);
         }
     }
 }
